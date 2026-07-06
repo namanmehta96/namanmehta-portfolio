@@ -343,7 +343,7 @@
       "label": "getCaseStudy()",
       "file_type": "code",
       "source_file": "src/data/projects.ts",
-      "source_location": "L93",
+      "source_location": "L127",
       "id": "projects_getcasestudy",
       "community": 3
     },
@@ -925,7 +925,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/projects.ts",
-      "source_location": "L93",
+      "source_location": "L127",
       "weight": 1.0,
       "_src": "projects",
       "_tgt": "projects_getcasestudy",

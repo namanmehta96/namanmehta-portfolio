@@ -35,7 +35,7 @@ export const site: SiteInfo = {
   github: "https://github.com/namanmehta96",
   personalLine:
     "Based in Nice. Archer at the range, Top 16 at the Call of Duty Mobile World Championship, soft spot for animals.",
-  bio: "Almost seven years as a Database Administrator at Tata Consultancy Services, working with clients including Morgan Stanley and the Election Commission of India — where I supported reporting infrastructure tracking operational KPIs across systems serving 900M+ registered voters. At Morgan Stanley, I built Python automation pipelines that eliminated 50% of manual reporting workflows and analysed incident patterns that drove a 30% reduction in response time. Now finishing the Global MBA at EDHEC Business School, specialising in AI and Innovation (Class of 2026). Anthropic AI Fluency certified, with hands-on experience applying LLMs and agentic workflows to real problems.",
+  bio: "Almost seven years as a Database Administrator at Tata Consultancy Services, working with clients including Morgan Stanley and the Election Commission of India, where I supported reporting infrastructure tracking operational KPIs across systems serving 900M+ registered voters. At Morgan Stanley, I built Python automation pipelines that eliminated 50% of manual reporting workflows and analysed incident patterns that drove a 30% reduction in response time. Now finishing the Global MBA at EDHEC Business School, specialising in AI and Innovation (Class of 2026). Anthropic AI Fluency certified, with hands-on experience applying LLMs and agentic workflows to real problems.",
 };
 
 export const experience: ExperienceEntry[] = [
@@ -94,5 +94,7 @@ export const skills: SkillGroup[] = [
 ];
 
 export const achievements: string[] = [
-  "EDHEC Global MBA Hackathon, Paris 2026 — 3rd of 8 international teams (IBM enterprise AI challenge)",
+  "Best Pitch, EDHEC Sustainable Impact Challenge 2026, out of 15 teams (Orange Business)",
+  "3rd of 8 international teams, EDHEC Global MBA Hackathon, Paris 2026 (partnered with IBM)",
+  "Top 16, Call of Duty Mobile World Championship 2021",
 ];

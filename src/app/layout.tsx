@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     canonical: "./",
   },
   title: {
-    default: "Naman Mehta — Portfolio",
-    template: "%s — Naman Mehta",
+    default: "Naman Mehta · Portfolio",
+    template: "%s · Naman Mehta",
   },
   description: `${site.tagline} Case studies in data, product and AI strategy by ${site.name}.`,
   openGraph: {
-    siteName: "Naman Mehta — Portfolio",
+    siteName: "Naman Mehta · Portfolio",
     locale: "en_US",
     type: "website",
   },

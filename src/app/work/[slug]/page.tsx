@@ -95,7 +95,20 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
               </li>
             ))}
           </ul>
-          <div className="mt-10">
+          {project.recognition && (
+            <p className="mt-6 text-sm text-accent">{project.recognition}</p>
+          )}
+          <div className="mt-10 flex flex-wrap items-center gap-4">
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-accent px-8 py-4 text-background transition-colors duration-250 hover:bg-accent/85 focus-visible:bg-accent/85"
+            >
+              View live
+              <ArrowUpRight />
+              <span className="sr-only"> (opens in new tab)</span>
+            </a>
             <a
               href={project.repo}
               target="_blank"
