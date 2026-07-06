@@ -29,6 +29,12 @@ Cinematic case-study portfolio. Dark, bold, motion-rich, in the spirit of olivie
   - Body: **16–18px**, generous line-height (1.6–1.8)
 - Tight tracking on display sizes (`tracking-tight`), small-caps labels may use wide tracking.
 
+### Spacing
+
+- **No text within 2.5rem of any horizontal rule, ever.** Dividers float in empty space, roughly midway between the content above and below — never touching text.
+- Home project rows: symmetric `py-[clamp(3.5rem,7vw,6rem)]` so each hairline sits centered between rows; section label rows get a `clamp(4rem,7vw,6rem)` pause before the content that follows.
+- Row text intervals are visibly distinct: title → oneLiner (mt-6/8) → tags (mt-10/12).
+
 ### Motion principles
 
 - **Lenis** for smooth scroll (single root instance), **GSAP ScrollTrigger** for scroll reveals, **Framer Motion** for page transitions and hover micro-interactions.

@@ -63,7 +63,7 @@ export function Footer() {
             <ArrowUpRight />
           </a>
         </div>
-        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-foreground/10 pt-8 text-xs text-muted">
+        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-foreground/10 pt-10 text-xs text-muted">
           <p>
             &copy; {new Date().getFullYear()} {site.name}
           </p>

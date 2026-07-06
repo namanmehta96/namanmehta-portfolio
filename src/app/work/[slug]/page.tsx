@@ -81,7 +81,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             <Rule className="flex-1" />
           </div>
           <h1
-            className={`mt-8 font-heading text-[clamp(2.6rem,7.5vw,7rem)] font-bold leading-[0.95] tracking-tight ${
+            className={`mt-12 font-heading text-[clamp(2.6rem,7.5vw,7rem)] font-bold leading-[0.95] tracking-tight ${
               project.accent ? "text-accent" : "text-foreground"
             }`}
           >
@@ -140,7 +140,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 </h2>
                 <Rule className="flex-1" />
               </div>
-              <p className="mt-8 max-w-prose text-lg leading-relaxed text-foreground">
+              <p className="mt-12 max-w-prose text-lg leading-relaxed text-foreground">
                 {section.text}
               </p>
             </Reveal>
@@ -159,9 +159,9 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
               </h2>
               <Rule className="flex-1" />
             </div>
-            <ul className="mt-4 max-w-prose divide-y divide-foreground/10">
+            <ul className="mt-6 max-w-prose divide-y divide-foreground/10">
               {project.learnings.map((learning, learningIndex) => (
-                <li key={learningIndex} className="flex gap-6 py-6">
+                <li key={learningIndex} className="flex gap-6 py-10">
                   <span className="pt-1 font-heading text-sm font-medium tabular-nums text-accent">
                     {pad(learningIndex + 1)}
                   </span>

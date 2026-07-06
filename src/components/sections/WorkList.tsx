@@ -73,7 +73,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
             </div>
           </Reveal>
         </div>
-        <div className="mt-12">
+        <div className="mt-[clamp(4rem,7vw,6rem)]">
           {caseStudies.map((project, index) => (
             <Reveal key={project.slug}>
               <div className={dimmed(hovered?.slug === project.slug)}>
@@ -148,7 +148,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
                       </p>
                       <p
                         data-row-copy
-                        className="mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.25em] text-muted md:mt-10"
+                        className="mt-10 flex w-fit max-w-full flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.25em] text-muted md:mt-12"
                       >
                         {project.tech.map((tag, tagIndex) => (
                           <Fragment key={tag}>
@@ -178,7 +178,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
         {note && (
           <Reveal>
             <div className={dimmed(false)}>
-              <div className="grid grid-cols-1 gap-y-3 border-b border-foreground/10 py-[clamp(2rem,4vw,3rem)] md:grid-cols-[6rem_1fr] md:gap-x-14 md:gap-y-0">
+              <div className="grid grid-cols-1 gap-y-3 border-b border-foreground/10 py-[clamp(2.5rem,5vw,4rem)] md:grid-cols-[6rem_1fr] md:gap-x-14 md:gap-y-0">
                 <span className="text-xs uppercase tracking-[0.25em] text-muted md:pt-1">
                   NDA
                 </span>

@@ -321,7 +321,7 @@
       "source_file": "src/components/motion/Counter.tsx",
       "source_location": "L1",
       "id": "counter",
-      "community": 7
+      "community": 5
     },
     {
       "label": "Counter()",
@@ -329,7 +329,7 @@
       "source_file": "src/components/motion/Counter.tsx",
       "source_location": "L20",
       "id": "counter_counter",
-      "community": 7
+      "community": 5
     },
     {
       "label": "SplitChars.tsx",
@@ -369,7 +369,7 @@
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L1",
       "id": "reveal",
-      "community": 5
+      "community": 7
     },
     {
       "label": "Reveal()",
@@ -377,7 +377,7 @@
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L19",
       "id": "reveal_reveal",
-      "community": 5
+      "community": 7
     },
     {
       "label": "ProjectPreview.tsx",
