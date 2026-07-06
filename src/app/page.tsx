@@ -1,14 +1,34 @@
 import { site } from "@/data/site";
+import { caseStudies, projects, type ProjectNote } from "@/data/projects";
+import { Hero } from "@/components/sections/Hero";
+import { WorkList } from "@/components/sections/WorkList";
+import { AboutTeaser } from "@/components/sections/AboutTeaser";
 
-// Temporary boot-check placeholder. The real homepage is built in the next session.
+// First two sentences of the bio, derived — never retyped.
+const bioExcerpt = `${site.bio.split(". ").slice(0, 2).join(". ")}.`;
+
 export default function Home() {
+  const note = projects.find((p): p is ProjectNote => p.type === "note");
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-6 px-6 text-center">
-      <h1 className="font-heading text-[clamp(3rem,10vw,9rem)] font-bold leading-none tracking-tight">
-        {site.name}
-      </h1>
-      <p className="text-lg text-muted">{site.tagline}</p>
-      <p className="text-sm text-accent">{site.availability}</p>
-    </main>
+    <>
+      <Hero
+        name={site.name}
+        tagline={site.tagline}
+        availability={site.availability}
+        location={site.location}
+      />
+      <WorkList
+        caseStudies={caseStudies.map(({ slug, title, oneLiner, tech, accent }) => ({
+          slug,
+          title,
+          oneLiner,
+          tech,
+          accent,
+        }))}
+        note={note ? { title: note.title, body: note.body } : null}
+      />
+      <AboutTeaser excerpt={bioExcerpt} />
+    </>
   );
 }
