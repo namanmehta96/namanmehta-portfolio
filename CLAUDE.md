@@ -32,7 +32,7 @@ Cinematic case-study portfolio. Dark, bold, motion-rich, in the spirit of olivie
 ### Spacing
 
 - **No text within 2.5rem of any horizontal rule, ever.** Dividers float in empty space, roughly midway between the content above and below — never touching text.
-- Home project rows: symmetric `py-[clamp(3.5rem,7vw,6rem)]` so each hairline sits centered between rows; section label rows get a `clamp(4rem,7vw,6rem)` pause before the content that follows.
+- Home project rows: symmetric `py-[clamp(2.5rem,5vw,4.25rem)]` so each hairline sits centered between rows; section label rows get a `clamp(2.5rem,4vw,3.5rem)` pause before the content that follows. Generous but not empty — the first row is reachable without scrolling past a void.
 - Row text intervals are visibly distinct: title → oneLiner (mt-6/8) → tags (mt-10/12).
 
 ### Motion principles
@@ -47,10 +47,11 @@ Cinematic case-study portfolio. Dark, bold, motion-rich, in the spirit of olivie
 ### Signature moments (the deliberate set — don't add more casually)
 
 1. **Ambient aurora** — slow organic amber/umber gradient canvas behind the hero (full strength) and footer (faint): low-res canvas buffer, GPU-blurred, ~45s drift, pauses offscreen, static frame under reduced motion (`src/components/effects/Aurora.tsx`). Clearly visible within 3 seconds of landing, never distracting from text.
-2. **Preview spotlight** — hovering a home work row floats a 480×320 screenshot card that lerps after the cursor with velocity tilt, constrained to never cover that row's title/oneLiner and clamped to the viewport; the rest of the page dims ~35% behind it. Desktop only; touch gets static thumbnails (`src/components/effects/ProjectPreview.tsx`, images in `public/previews/`, regenerate via `node scripts/capture-previews.mjs`).
+2. **Preview spotlight** — hovering a home work row floats a 400×260 screenshot card that lerps after the cursor with velocity tilt, constrained to never cover that row's title/oneLiner and clamped to the viewport; the rest of the page dims gently (~25% overlay, sibling rows to 55%) behind it. Desktop only; touch gets static thumbnails (`src/components/effects/ProjectPreview.tsx`, images in `public/previews/`, regenerate via `node scripts/capture-previews.mjs`).
 3. **Character-level hero reveal** — per-char clip-up (~20ms stagger); home row titles get a quiet per-char lift on hover (`SplitChars`).
 4. **Drawn lines and counters** — label-row hairlines draw in (`Rule`), section indexes count up (`Counter`), the About timeline's amber spine draws with scroll (`TimelineSpine`).
 5. **Footer moment** — large magnetic "Let's talk" mailto line so the site ends on a beat.
+6. **Scroll progress** — 2px amber line fixed at the very top fills with scroll site-wide (`src/components/effects/ScrollProgress.tsx`); on case studies the section numbers tick from muted to amber as each section is passed. Functional reading aids — both stay active under reduced motion (ticks become instant).
 
 No custom cursor — native cursor everywhere (a custom one was tried and deliberately removed in the refinement pass).
 

@@ -46,7 +46,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
   const [hovered, setHovered] = useState<HoveredRow | null>(null);
 
   const dimmed = (isHovered: boolean) =>
-    `transition-opacity duration-300 ${hovered && !isHovered ? "opacity-40" : ""}`;
+    `transition-opacity duration-300 ${hovered && !isHovered ? "opacity-55" : ""}`;
 
   return (
     <section id="work" className="relative z-[26] scroll-mt-24 py-[clamp(4rem,10vw,8rem)]">
@@ -56,7 +56,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
         initial={false}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.3, ease: HOVER_EASE }}
-        className="pointer-events-none fixed inset-0 z-[-1] bg-background/35"
+        className="pointer-events-none fixed inset-0 z-[-1] bg-background/25"
       />
       <div className="mx-auto w-full max-w-7xl px-6 md:px-10">
         <div className={dimmed(false)}>
@@ -73,7 +73,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
             </div>
           </Reveal>
         </div>
-        <div className="mt-[clamp(4rem,7vw,6rem)]">
+        <div className="mt-[clamp(2.5rem,4vw,3.5rem)]">
           {caseStudies.map((project, index) => (
             <Reveal key={project.slug}>
               <div className={dimmed(hovered?.slug === project.slug)}>
@@ -84,7 +84,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
                       setHovered({ slug: project.slug, row: event.currentTarget });
                   }}
                   onPointerLeave={() => setHovered(null)}
-                  className={`group block border-t border-foreground/10 py-[clamp(3.5rem,7vw,6rem)] ${
+                  className={`group block border-t border-foreground/10 py-[clamp(2.5rem,5vw,4.25rem)] ${
                     index === caseStudies.length - 1 ? "border-b" : ""
                   }`}
                   whileHover={reducedMotion ? undefined : { scale: 1.01 }}

@@ -10,6 +10,13 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 interface CounterProps {
   value: number;
   className?: string;
+  /**
+   * Tick to amber once the surrounding section scrolls past (reading
+   * progress). Functional, so it stays active under prefers-reduced-motion —
+   * the color change is simply instant there (global reduced-motion CSS
+   * zeroes the transition).
+   */
+  tick?: boolean;
 }
 
 /**
@@ -17,13 +24,25 @@ interface CounterProps {
  * the viewport. Server-renders the final value (no-JS and SEO safe); GSAP
  * takes over the text content on the client, so React never re-renders it.
  */
-export function Counter({ value, className }: CounterProps) {
+export function Counter({ value, className, tick = false }: CounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
 
   useGSAP(
     () => {
       const el = ref.current;
       if (!el) return;
+      if (tick) {
+        ScrollTrigger.create({
+          trigger: el.closest("section") ?? el,
+          start: "top 55%",
+          onEnter: () => {
+            el.style.color = "var(--accent)";
+          },
+          onLeaveBack: () => {
+            el.style.color = "";
+          },
+        });
+      }
       const mm = gsap.matchMedia();
       mm.add("(prefers-reduced-motion: no-preference)", () => {
         const state = { v: 0 };

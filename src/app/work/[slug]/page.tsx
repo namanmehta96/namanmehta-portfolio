@@ -133,7 +133,8 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
               <div className="flex items-center gap-4">
                 <Counter
                   value={sectionIndex + 1}
-                  className="text-xs tracking-[0.25em] text-accent tabular-nums"
+                  tick
+                  className="text-xs tracking-[0.25em] text-muted tabular-nums transition-colors duration-250"
                 />
                 <h2 className="text-xs uppercase tracking-[0.25em] text-muted">
                   {section.label}
@@ -152,7 +153,8 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             <div className="flex items-center gap-4">
               <Counter
                 value={sections.length + 1}
-                className="text-xs tracking-[0.25em] text-accent tabular-nums"
+                tick
+                className="text-xs tracking-[0.25em] text-muted tabular-nums transition-colors duration-250"
               />
               <h2 className="text-xs uppercase tracking-[0.25em] text-muted">
                 Learnings

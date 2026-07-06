@@ -5,8 +5,8 @@ import Image from "next/image";
 import { m, useMotionValue } from "framer-motion";
 
 const EASE: [number, number, number, number] = [0.215, 0.61, 0.355, 1];
-const CARD_W = 480;
-const CARD_H = 320;
+const CARD_W = 400;
+const CARD_H = 260;
 const MARGIN = 24;
 
 interface PreviewItem {
@@ -25,7 +25,7 @@ interface ProjectPreviewProps {
 }
 
 /**
- * Floating 480x320 preview card. Follows the cursor with lerp + velocity tilt,
+ * Floating CARD_W x CARD_H preview card. Follows the cursor with lerp + velocity tilt,
  * but is constrained so it never covers the hovered row's own title (stays
  * below its baseline) or oneLiner/tags (stays to their right), clamped to the
  * viewport. Renders above everything including the grain overlay. Desktop
@@ -155,7 +155,7 @@ export function ProjectPreview({ items, active }: ProjectPreviewProps) {
           alt=""
           width={720}
           height={480}
-          sizes="480px"
+          sizes="400px"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
             active?.slug === item.slug ? "opacity-100" : "opacity-0"
           }`}
