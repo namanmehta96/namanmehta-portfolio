@@ -1,0 +1,130 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1",
+      "id": "next_env_d",
+      "community": 3
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "id": "next_config",
+      "community": 4
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1",
+      "id": "layout",
+      "community": 1
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L23",
+      "id": "layout_rootlayout",
+      "community": 1
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L1",
+      "id": "page",
+      "community": 0
+    },
+    {
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L4",
+      "id": "page_home",
+      "community": 0
+    },
+    {
+      "label": "projects.ts",
+      "file_type": "code",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L1",
+      "id": "projects",
+      "community": 2
+    },
+    {
+      "label": "getCaseStudy()",
+      "file_type": "code",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L93",
+      "id": "projects_getcasestudy",
+      "community": 2
+    },
+    {
+      "label": "site.ts",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L1",
+      "id": "site",
+      "community": 0
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "layout",
+      "_tgt": "layout_rootlayout",
+      "source": "layout",
+      "target": "layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "page",
+      "_tgt": "site",
+      "source": "page",
+      "target": "site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "page",
+      "_tgt": "page_home",
+      "source": "page",
+      "target": "page_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_src": "projects",
+      "_tgt": "projects_getcasestudy",
+      "source": "projects",
+      "target": "projects_getcasestudy",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
