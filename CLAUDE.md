@@ -40,12 +40,13 @@ Cinematic case-study portfolio. Dark, bold, motion-rich, in the spirit of olivie
 
 ### Signature moments (the deliberate set — don't add more casually)
 
-1. **Living hero background** — two soft amber radial glows breathing on 16-21s CSS loops with lerped mouse parallax (`src/components/effects/HeroGlow.tsx`).
-2. **Cursor-following project previews** — floating screenshot card lerps after the cursor over home work rows, velocity tilt, desktop only; touch gets static thumbnails (`src/components/effects/ProjectPreview.tsx`, images in `public/previews/`, regenerate via `node scripts/capture-previews.mjs`).
-3. **Custom cursor** — dot + lagging ring; ring becomes an amber "View" badge over work rows, shrinks on links. Fine pointers only, never under reduced motion (`src/components/effects/CustomCursor.tsx`).
-4. **Character-level hero reveal** — per-char clip-up (~20ms stagger); home row titles get a quiet per-char lift on hover (`SplitChars`).
-5. **Drawn lines and counters** — label-row hairlines draw in (`Rule`), section indexes count up (`Counter`), the About timeline's amber spine draws with scroll (`TimelineSpine`).
-6. **Footer moment** — large magnetic "Let's talk" mailto line so the site ends on a beat.
+1. **Ambient aurora** — slow organic amber/umber gradient canvas behind the hero (full strength) and footer (faint): low-res canvas buffer, GPU-blurred, ~45s drift, pauses offscreen, static frame under reduced motion (`src/components/effects/Aurora.tsx`). Clearly visible within 3 seconds of landing, never distracting from text.
+2. **Preview spotlight** — hovering a home work row floats a 480×320 screenshot card that lerps after the cursor with velocity tilt, constrained to never cover that row's title/oneLiner and clamped to the viewport; the rest of the page dims ~35% behind it. Desktop only; touch gets static thumbnails (`src/components/effects/ProjectPreview.tsx`, images in `public/previews/`, regenerate via `node scripts/capture-previews.mjs`).
+3. **Character-level hero reveal** — per-char clip-up (~20ms stagger); home row titles get a quiet per-char lift on hover (`SplitChars`).
+4. **Drawn lines and counters** — label-row hairlines draw in (`Rule`), section indexes count up (`Counter`), the About timeline's amber spine draws with scroll (`TimelineSpine`).
+5. **Footer moment** — large magnetic "Let's talk" mailto line so the site ends on a beat.
+
+No custom cursor — native cursor everywhere (a custom one was tried and deliberately removed in the refinement pass).
 
 ## Performance budget
 

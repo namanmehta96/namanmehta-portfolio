@@ -1,7 +1,7 @@
 "use client";
 
 import { m, useReducedMotion } from "framer-motion";
-import { HeroGlow } from "@/components/effects/HeroGlow";
+import { Aurora } from "@/components/effects/Aurora";
 
 const EASE: [number, number, number, number] = [0.215, 0.61, 0.355, 1];
 // power2.inOut — documented deviation: the scroll cue is a symmetric loop
@@ -44,7 +44,7 @@ export function Hero({ name, tagline, availability, location, heroLine }: HeroPr
 
   return (
     <section className="relative flex min-h-svh flex-col justify-center overflow-hidden">
-      <HeroGlow />
+      <Aurora />
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-28 pb-32 md:px-10">
         <h1
           aria-label={name}

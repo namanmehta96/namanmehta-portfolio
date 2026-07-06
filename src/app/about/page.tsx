@@ -22,7 +22,7 @@ const bioParagraphs =
 export default function AboutPage() {
   return (
     <>
-      <section className="mx-auto w-full max-w-7xl px-6 pb-[clamp(4rem,10vw,8rem)] pt-36 md:px-10 md:pt-44">
+      <section className="mx-auto w-full max-w-7xl px-6 pb-[clamp(2.5rem,5vw,4rem)] pt-36 md:px-10 md:pt-44">
         <h1 className="sr-only">About {site.name}</h1>
         <div className="flex items-center gap-4">
           <Counter
@@ -56,7 +56,7 @@ export default function AboutPage() {
 
       <SkillsGrid index={3} />
 
-      <section className="mx-auto w-full max-w-7xl px-6 py-[clamp(4rem,10vw,8rem)] md:px-10">
+      <section className="mx-auto w-full max-w-7xl px-6 py-[clamp(2.5rem,5vw,4rem)] md:px-10">
         <div className="flex items-center gap-4">
           <Counter
             value={4}
@@ -89,7 +89,7 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <div className="mx-auto w-full max-w-7xl px-6 pb-[clamp(4rem,10vw,8rem)] md:px-10">
+      <div className="mx-auto w-full max-w-7xl px-6 pt-[clamp(2.5rem,5vw,4rem)] pb-[clamp(4rem,10vw,8rem)] md:px-10">
         <Reveal>
           <p className="max-w-2xl border-l-2 border-accent pl-5 text-base leading-relaxed text-muted">
             {site.personalLine}

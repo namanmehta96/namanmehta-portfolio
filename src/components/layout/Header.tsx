@@ -11,7 +11,7 @@ export function Header() {
       >
         Skip to content
       </a>
-      <header className="pointer-events-none fixed inset-x-0 top-0 z-40 bg-gradient-to-b from-background via-background/85 to-transparent pb-10">
+      <header className="header-scrim pointer-events-none fixed inset-x-0 top-0 z-40 pb-10">
         <div className="pointer-events-auto mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-5 md:px-10">
           <Link
             href="/"

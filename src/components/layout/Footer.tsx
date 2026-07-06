@@ -1,5 +1,6 @@
 import { site } from "@/data/site";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { Aurora } from "@/components/effects/Aurora";
 
 function ArrowUpRight() {
   return (
@@ -22,8 +23,9 @@ function ArrowUpRight() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-foreground/10">
-      <div className="mx-auto w-full max-w-7xl px-6 py-[clamp(4rem,10vw,8rem)] md:px-10">
+    <footer className="relative overflow-hidden border-t border-foreground/10">
+      <Aurora intensity={0.5} />
+      <div className="relative mx-auto w-full max-w-7xl px-6 py-[clamp(4rem,10vw,8rem)] md:px-10">
         <h2 className="font-heading font-bold tracking-tight">
           <MagneticButton
             href={`mailto:${site.email}`}

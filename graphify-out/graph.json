@@ -9,7 +9,7 @@
       "source_file": "next-env.d.ts",
       "source_location": "L1",
       "id": "next_env_d",
-      "community": 8
+      "community": 9
     },
     {
       "label": "next.config.ts",
@@ -17,7 +17,7 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "id": "next_config",
-      "community": 9
+      "community": 10
     },
     {
       "label": "robots.ts",
@@ -25,7 +25,7 @@
       "source_file": "src/app/robots.ts",
       "source_location": "L1",
       "id": "robots",
-      "community": 7
+      "community": 8
     },
     {
       "label": "robots()",
@@ -33,7 +33,7 @@
       "source_file": "src/app/robots.ts",
       "source_location": "L6",
       "id": "robots_robots",
-      "community": 7
+      "community": 8
     },
     {
       "label": "opengraph-image.tsx",
@@ -41,7 +41,7 @@
       "source_file": "src/app/opengraph-image.tsx",
       "source_location": "L1",
       "id": "opengraph_image",
-      "community": 0
+      "community": 1
     },
     {
       "label": "sitemap.ts",
@@ -49,7 +49,7 @@
       "source_file": "src/app/sitemap.ts",
       "source_location": "L1",
       "id": "sitemap",
-      "community": 2
+      "community": 0
     },
     {
       "label": "sitemap()",
@@ -57,7 +57,7 @@
       "source_file": "src/app/sitemap.ts",
       "source_location": "L7",
       "id": "sitemap_sitemap",
-      "community": 2
+      "community": 0
     },
     {
       "label": "layout.tsx",
@@ -65,15 +65,15 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L1",
       "id": "layout",
-      "community": 0
+      "community": 1
     },
     {
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L48",
+      "source_location": "L47",
       "id": "layout_rootlayout",
-      "community": 0
+      "community": 1
     },
     {
       "label": "page.tsx",
@@ -97,7 +97,7 @@
       "source_file": "src/app/template.tsx",
       "source_location": "L1",
       "id": "template",
-      "community": 5
+      "community": 6
     },
     {
       "label": "Template()",
@@ -105,7 +105,7 @@
       "source_file": "src/app/template.tsx",
       "source_location": "L3",
       "id": "template_template",
-      "community": 5
+      "community": 6
     },
     {
       "label": "pad()",
@@ -145,7 +145,7 @@
       "source_file": "src/components/ui/MagneticButton.tsx",
       "source_location": "L1",
       "id": "magneticbutton",
-      "community": 0
+      "community": 2
     },
     {
       "label": "MagneticButton()",
@@ -153,7 +153,7 @@
       "source_file": "src/components/ui/MagneticButton.tsx",
       "source_location": "L17",
       "id": "magneticbutton_magneticbutton",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Hero.tsx",
@@ -161,7 +161,7 @@
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L1",
       "id": "hero",
-      "community": 3
+      "community": 2
     },
     {
       "label": "WorkList.tsx",
@@ -169,7 +169,7 @@
       "source_file": "src/components/sections/WorkList.tsx",
       "source_location": "L1",
       "id": "worklist",
-      "community": 2
+      "community": 0
     },
     {
       "label": "ArrowUpRight()",
@@ -177,7 +177,15 @@
       "source_file": "src/components/sections/WorkList.tsx",
       "source_location": "L20",
       "id": "worklist_arrowupright",
-      "community": 2
+      "community": 0
+    },
+    {
+      "label": "dimmed()",
+      "file_type": "code",
+      "source_file": "src/components/sections/WorkList.tsx",
+      "source_location": "L48",
+      "id": "worklist_dimmed",
+      "community": 0
     },
     {
       "label": "Timeline.tsx",
@@ -185,7 +193,7 @@
       "source_file": "src/components/sections/Timeline.tsx",
       "source_location": "L1",
       "id": "timeline",
-      "community": 1
+      "community": 4
     },
     {
       "label": "AboutTeaser.tsx",
@@ -193,7 +201,7 @@
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L1",
       "id": "aboutteaser",
-      "community": 1
+      "community": 5
     },
     {
       "label": "ArrowRight()",
@@ -201,7 +209,7 @@
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L6",
       "id": "aboutteaser_arrowright",
-      "community": 1
+      "community": 5
     },
     {
       "label": "AboutTeaser()",
@@ -209,7 +217,7 @@
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L29",
       "id": "aboutteaser_aboutteaser",
-      "community": 1
+      "community": 5
     },
     {
       "label": "SkillsGrid.tsx",
@@ -217,7 +225,7 @@
       "source_file": "src/components/sections/SkillsGrid.tsx",
       "source_location": "L1",
       "id": "skillsgrid",
-      "community": 1
+      "community": 7
     },
     {
       "label": "NavLinks.tsx",
@@ -225,7 +233,7 @@
       "source_file": "src/components/layout/NavLinks.tsx",
       "source_location": "L1",
       "id": "navlinks",
-      "community": 0
+      "community": 1
     },
     {
       "label": "NavLinks()",
@@ -233,7 +241,7 @@
       "source_file": "src/components/layout/NavLinks.tsx",
       "source_location": "L11",
       "id": "navlinks_navlinks",
-      "community": 0
+      "community": 1
     },
     {
       "label": "Footer.tsx",
@@ -241,23 +249,23 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L1",
       "id": "footer",
-      "community": 0
+      "community": 2
     },
     {
       "label": "ArrowUpRight()",
       "file_type": "code",
       "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "footer_arrowupright",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Footer()",
       "file_type": "code",
       "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "id": "footer_footer",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Header.tsx",
@@ -265,7 +273,7 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L1",
       "id": "header",
-      "community": 0
+      "community": 1
     },
     {
       "label": "Header()",
@@ -273,7 +281,7 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L5",
       "id": "header_header",
-      "community": 0
+      "community": 1
     },
     {
       "label": "Rule.tsx",
@@ -281,7 +289,7 @@
       "source_file": "src/components/motion/Rule.tsx",
       "source_location": "L1",
       "id": "rule",
-      "community": 1
+      "community": 4
     },
     {
       "label": "Rule()",
@@ -289,7 +297,7 @@
       "source_file": "src/components/motion/Rule.tsx",
       "source_location": "L11",
       "id": "rule_rule",
-      "community": 1
+      "community": 4
     },
     {
       "label": "PageTransition.tsx",
@@ -297,7 +305,7 @@
       "source_file": "src/components/motion/PageTransition.tsx",
       "source_location": "L1",
       "id": "pagetransition",
-      "community": 5
+      "community": 6
     },
     {
       "label": "PageTransition()",
@@ -305,7 +313,7 @@
       "source_file": "src/components/motion/PageTransition.tsx",
       "source_location": "L8",
       "id": "pagetransition_pagetransition",
-      "community": 5
+      "community": 6
     },
     {
       "label": "Counter.tsx",
@@ -313,7 +321,7 @@
       "source_file": "src/components/motion/Counter.tsx",
       "source_location": "L1",
       "id": "counter",
-      "community": 1
+      "community": 7
     },
     {
       "label": "Counter()",
@@ -321,7 +329,7 @@
       "source_file": "src/components/motion/Counter.tsx",
       "source_location": "L20",
       "id": "counter_counter",
-      "community": 1
+      "community": 7
     },
     {
       "label": "SplitChars.tsx",
@@ -329,7 +337,7 @@
       "source_file": "src/components/motion/SplitChars.tsx",
       "source_location": "L1",
       "id": "splitchars",
-      "community": 2
+      "community": 0
     },
     {
       "label": "SplitChars()",
@@ -337,7 +345,7 @@
       "source_file": "src/components/motion/SplitChars.tsx",
       "source_location": "L13",
       "id": "splitchars_splitchars",
-      "community": 2
+      "community": 0
     },
     {
       "label": "TimelineSpine.tsx",
@@ -345,7 +353,7 @@
       "source_file": "src/components/motion/TimelineSpine.tsx",
       "source_location": "L1",
       "id": "timelinespine",
-      "community": 1
+      "community": 4
     },
     {
       "label": "TimelineSpine()",
@@ -353,7 +361,7 @@
       "source_file": "src/components/motion/TimelineSpine.tsx",
       "source_location": "L15",
       "id": "timelinespine_timelinespine",
-      "community": 1
+      "community": 4
     },
     {
       "label": "Reveal.tsx",
@@ -361,7 +369,7 @@
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L1",
       "id": "reveal",
-      "community": 1
+      "community": 5
     },
     {
       "label": "Reveal()",
@@ -369,7 +377,7 @@
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L19",
       "id": "reveal_reveal",
-      "community": 1
+      "community": 5
     },
     {
       "label": "ProjectPreview.tsx",
@@ -377,87 +385,47 @@
       "source_file": "src/components/effects/ProjectPreview.tsx",
       "source_location": "L1",
       "id": "projectpreview",
-      "community": 2
+      "community": 0
     },
     {
       "label": "ProjectPreview()",
       "file_type": "code",
       "source_file": "src/components/effects/ProjectPreview.tsx",
-      "source_location": "L27",
+      "source_location": "L34",
       "id": "projectpreview_projectpreview",
+      "community": 0
+    },
+    {
+      "label": "Aurora.tsx",
+      "file_type": "code",
+      "source_file": "src/components/effects/Aurora.tsx",
+      "source_location": "L1",
+      "id": "aurora",
       "community": 2
     },
     {
-      "label": "CustomCursor.tsx",
+      "label": "tokenRgb()",
       "file_type": "code",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L1",
-      "id": "customcursor",
-      "community": 4
+      "source_file": "src/components/effects/Aurora.tsx",
+      "source_location": "L13",
+      "id": "aurora_tokenrgb",
+      "community": 2
     },
     {
-      "label": "update()",
+      "label": "mix()",
       "file_type": "code",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L29",
-      "id": "customcursor_update",
-      "community": 4
+      "source_file": "src/components/effects/Aurora.tsx",
+      "source_location": "L25",
+      "id": "aurora_mix",
+      "community": 2
     },
     {
-      "label": "onMove()",
+      "label": "Aurora()",
       "file_type": "code",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L48",
-      "id": "customcursor_onmove",
-      "community": 4
-    },
-    {
-      "label": "onOver()",
-      "file_type": "code",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L61",
-      "id": "customcursor_onover",
-      "community": 4
-    },
-    {
-      "label": "onLeaveWindow()",
-      "file_type": "code",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L67",
-      "id": "customcursor_onleavewindow",
-      "community": 4
-    },
-    {
-      "label": "onEnterWindow()",
-      "file_type": "code",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L68",
-      "id": "customcursor_onenterwindow",
-      "community": 4
-    },
-    {
-      "label": "loop()",
-      "file_type": "code",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L70",
-      "id": "customcursor_loop",
-      "community": 4
-    },
-    {
-      "label": "HeroGlow.tsx",
-      "file_type": "code",
-      "source_file": "src/components/effects/HeroGlow.tsx",
-      "source_location": "L1",
-      "id": "heroglow",
-      "community": 3
-    },
-    {
-      "label": "HeroGlow()",
-      "file_type": "code",
-      "source_file": "src/components/effects/HeroGlow.tsx",
-      "source_location": "L11",
-      "id": "heroglow_heroglow",
-      "community": 3
+      "source_file": "src/components/effects/Aurora.tsx",
+      "source_location": "L44",
+      "id": "aurora_aurora",
+      "community": 2
     },
     {
       "label": "lenis-provider.tsx",
@@ -465,7 +433,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L1",
       "id": "lenis_provider",
-      "community": 6
+      "community": 1
     },
     {
       "label": "GsapTicker()",
@@ -473,7 +441,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L9",
       "id": "lenis_provider_gsapticker",
-      "community": 6
+      "community": 1
     },
     {
       "label": "LenisProvider()",
@@ -481,7 +449,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L34",
       "id": "lenis_provider_lenisprovider",
-      "community": 6
+      "community": 1
     },
     {
       "label": "projects.ts",
@@ -489,7 +457,7 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
       "id": "projects",
-      "community": 2
+      "community": 0
     },
     {
       "label": "getCaseStudy()",
@@ -497,7 +465,7 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L127",
       "id": "projects_getcasestudy",
-      "community": 2
+      "community": 0
     },
     {
       "label": "site.ts",
@@ -505,7 +473,7 @@
       "source_file": "src/data/site.ts",
       "source_location": "L1",
       "id": "site",
-      "community": 0
+      "community": 1
     }
   ],
   "links": [
@@ -600,18 +568,6 @@
       "source_location": "L7",
       "weight": 1.0,
       "_src": "layout",
-      "_tgt": "customcursor",
-      "source": "layout",
-      "target": "customcursor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/layout.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_src": "layout",
       "_tgt": "site",
       "source": "layout",
       "target": "site",
@@ -621,7 +577,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L48",
+      "source_location": "L47",
       "weight": 1.0,
       "_src": "layout",
       "_tgt": "layout_rootlayout",
@@ -864,9 +820,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_src": "hero",
-      "_tgt": "heroglow",
+      "_tgt": "aurora",
       "source": "hero",
-      "target": "heroglow",
+      "target": "aurora",
       "confidence_score": 1.0
     },
     {
@@ -951,6 +907,18 @@
       "_tgt": "worklist_arrowupright",
       "source": "worklist",
       "target": "worklist_arrowupright",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WorkList.tsx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "worklist",
+      "_tgt": "worklist_dimmed",
+      "source": "worklist",
+      "target": "worklist_dimmed",
       "confidence_score": 1.0
     },
     {
@@ -1158,10 +1126,22 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "footer",
+      "_tgt": "aurora",
+      "source": "footer",
+      "target": "aurora",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_src": "footer",
       "_tgt": "footer_arrowupright",
@@ -1173,7 +1153,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_src": "footer",
       "_tgt": "footer_footer",
@@ -1281,7 +1261,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/effects/ProjectPreview.tsx",
-      "source_location": "L27",
+      "source_location": "L34",
       "weight": 1.0,
       "_src": "projectpreview",
       "_tgt": "projectpreview_projectpreview",
@@ -1292,85 +1272,37 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L29",
+      "source_file": "src/components/effects/Aurora.tsx",
+      "source_location": "L13",
       "weight": 1.0,
-      "_src": "customcursor",
-      "_tgt": "customcursor_update",
-      "source": "customcursor",
-      "target": "customcursor_update",
+      "_src": "aurora",
+      "_tgt": "aurora_tokenrgb",
+      "source": "aurora",
+      "target": "aurora_tokenrgb",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L48",
+      "source_file": "src/components/effects/Aurora.tsx",
+      "source_location": "L25",
       "weight": 1.0,
-      "_src": "customcursor",
-      "_tgt": "customcursor_onmove",
-      "source": "customcursor",
-      "target": "customcursor_onmove",
+      "_src": "aurora",
+      "_tgt": "aurora_mix",
+      "source": "aurora",
+      "target": "aurora_mix",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L61",
+      "source_file": "src/components/effects/Aurora.tsx",
+      "source_location": "L44",
       "weight": 1.0,
-      "_src": "customcursor",
-      "_tgt": "customcursor_onover",
-      "source": "customcursor",
-      "target": "customcursor_onover",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L67",
-      "weight": 1.0,
-      "_src": "customcursor",
-      "_tgt": "customcursor_onleavewindow",
-      "source": "customcursor",
-      "target": "customcursor_onleavewindow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L68",
-      "weight": 1.0,
-      "_src": "customcursor",
-      "_tgt": "customcursor_onenterwindow",
-      "source": "customcursor",
-      "target": "customcursor_onenterwindow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/CustomCursor.tsx",
-      "source_location": "L70",
-      "weight": 1.0,
-      "_src": "customcursor",
-      "_tgt": "customcursor_loop",
-      "source": "customcursor",
-      "target": "customcursor_loop",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/HeroGlow.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_src": "heroglow",
-      "_tgt": "heroglow_heroglow",
-      "source": "heroglow",
-      "target": "heroglow_heroglow",
+      "_src": "aurora",
+      "_tgt": "aurora_aurora",
+      "source": "aurora",
+      "target": "aurora_aurora",
       "confidence_score": 1.0
     },
     {

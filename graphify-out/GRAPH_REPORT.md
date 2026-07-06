@@ -1,11 +1,11 @@
 # Graph Report - .  (2026-07-06)
 
 ## Corpus Check
-- 31 files · ~15,780 words
+- 30 files · ~15,943 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 63 nodes · 75 edges · 10 communities detected
+- 59 nodes · 72 edges · 11 communities detected
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -21,7 +21,7 @@ Cohesion: 0.18
 Nodes (0): 
 
 ### Community 1 - "Community 1"
-Cohesion: 0.21
+Cohesion: 0.2
 Nodes (0): 
 
 ### Community 2 - "Community 2"
@@ -29,23 +29,23 @@ Cohesion: 0.2
 Nodes (0): 
 
 ### Community 3 - "Community 3"
-Cohesion: 0.22
+Cohesion: 0.33
 Nodes (0): 
 
 ### Community 4 - "Community 4"
-Cohesion: 0.29
+Cohesion: 0.4
 Nodes (0): 
 
 ### Community 5 - "Community 5"
-Cohesion: 0.5
+Cohesion: 0.4
 Nodes (0): 
 
 ### Community 6 - "Community 6"
-Cohesion: 0.67
+Cohesion: 0.5
 Nodes (0): 
 
 ### Community 7 - "Community 7"
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 8 - "Community 8"
@@ -56,12 +56,16 @@ Nodes (0):
 Cohesion: 1.0
 Nodes (0): 
 
+### Community 10 - "Community 10"
+Cohesion: 1.0
+Nodes (0): 
+
 ## Knowledge Gaps
-- **Thin community `Community 7`** (2 nodes): `robots.ts`, `robots()`
+- **Thin community `Community 8`** (2 nodes): `robots.ts`, `robots()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 8`** (1 nodes): `next-env.d.ts`
+- **Thin community `Community 9`** (1 nodes): `next-env.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 9`** (1 nodes): `next.config.ts`
+- **Thin community `Community 10`** (1 nodes): `next.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions

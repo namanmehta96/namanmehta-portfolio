@@ -9,7 +9,7 @@ interface SkillsGridProps {
 
 export function SkillsGrid({ index }: SkillsGridProps) {
   return (
-    <section className="mx-auto w-full max-w-7xl px-6 py-[clamp(4rem,10vw,8rem)] md:px-10">
+    <section className="mx-auto w-full max-w-7xl px-6 py-[clamp(2.5rem,5vw,4rem)] md:px-10">
       <div className="flex items-center gap-4">
         {index !== undefined && (
           <Counter
