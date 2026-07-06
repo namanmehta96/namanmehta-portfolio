@@ -41,7 +41,7 @@
       "source_file": "src/app/opengraph-image.tsx",
       "source_location": "L1",
       "id": "opengraph_image",
-      "community": 2
+      "community": 0
     },
     {
       "label": "sitemap.ts",
@@ -49,7 +49,7 @@
       "source_file": "src/app/sitemap.ts",
       "source_location": "L1",
       "id": "sitemap",
-      "community": 3
+      "community": 2
     },
     {
       "label": "sitemap()",
@@ -57,7 +57,7 @@
       "source_file": "src/app/sitemap.ts",
       "source_location": "L7",
       "id": "sitemap_sitemap",
-      "community": 3
+      "community": 2
     },
     {
       "label": "layout.tsx",
@@ -71,7 +71,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L47",
+      "source_location": "L48",
       "id": "layout_rootlayout",
       "community": 0
     },
@@ -81,7 +81,7 @@
       "source_file": "src/app/work/[slug]/page.tsx",
       "source_location": "L1",
       "id": "page",
-      "community": 1
+      "community": 3
     },
     {
       "label": "Home()",
@@ -89,7 +89,7 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L10",
       "id": "page_home",
-      "community": 1
+      "community": 3
     },
     {
       "label": "template.tsx",
@@ -111,33 +111,33 @@
       "label": "pad()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L11",
+      "source_location": "L13",
       "id": "page_pad",
-      "community": 1
+      "community": 3
     },
     {
       "label": "ArrowUpRight()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L15",
+      "source_location": "L17",
       "id": "page_arrowupright",
-      "community": 1
+      "community": 3
     },
     {
       "label": "generateStaticParams()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L36",
+      "source_location": "L38",
       "id": "page_generatestaticparams",
-      "community": 1
+      "community": 3
     },
     {
       "label": "generateMetadata()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L40",
+      "source_location": "L42",
       "id": "page_generatemetadata",
-      "community": 1
+      "community": 3
     },
     {
       "label": "MagneticButton.tsx",
@@ -145,7 +145,7 @@
       "source_file": "src/components/ui/MagneticButton.tsx",
       "source_location": "L1",
       "id": "magneticbutton",
-      "community": 4
+      "community": 0
     },
     {
       "label": "MagneticButton()",
@@ -153,7 +153,7 @@
       "source_file": "src/components/ui/MagneticButton.tsx",
       "source_location": "L17",
       "id": "magneticbutton_magneticbutton",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Hero.tsx",
@@ -161,7 +161,7 @@
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L1",
       "id": "hero",
-      "community": 1
+      "community": 3
     },
     {
       "label": "WorkList.tsx",
@@ -169,15 +169,15 @@
       "source_file": "src/components/sections/WorkList.tsx",
       "source_location": "L1",
       "id": "worklist",
-      "community": 3
+      "community": 2
     },
     {
       "label": "ArrowUpRight()",
       "file_type": "code",
       "source_file": "src/components/sections/WorkList.tsx",
-      "source_location": "L13",
+      "source_location": "L20",
       "id": "worklist_arrowupright",
-      "community": 3
+      "community": 2
     },
     {
       "label": "Timeline.tsx",
@@ -185,7 +185,7 @@
       "source_file": "src/components/sections/Timeline.tsx",
       "source_location": "L1",
       "id": "timeline",
-      "community": 2
+      "community": 1
     },
     {
       "label": "AboutTeaser.tsx",
@@ -193,23 +193,23 @@
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L1",
       "id": "aboutteaser",
-      "community": 6
+      "community": 1
     },
     {
       "label": "ArrowRight()",
       "file_type": "code",
       "source_file": "src/components/sections/AboutTeaser.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "id": "aboutteaser_arrowright",
-      "community": 6
+      "community": 1
     },
     {
       "label": "AboutTeaser()",
       "file_type": "code",
       "source_file": "src/components/sections/AboutTeaser.tsx",
-      "source_location": "L27",
+      "source_location": "L29",
       "id": "aboutteaser_aboutteaser",
-      "community": 6
+      "community": 1
     },
     {
       "label": "SkillsGrid.tsx",
@@ -217,7 +217,7 @@
       "source_file": "src/components/sections/SkillsGrid.tsx",
       "source_location": "L1",
       "id": "skillsgrid",
-      "community": 2
+      "community": 1
     },
     {
       "label": "NavLinks.tsx",
@@ -241,7 +241,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L1",
       "id": "footer",
-      "community": 4
+      "community": 0
     },
     {
       "label": "ArrowUpRight()",
@@ -249,7 +249,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L4",
       "id": "footer_arrowupright",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Footer()",
@@ -257,7 +257,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L23",
       "id": "footer_footer",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Header.tsx",
@@ -276,6 +276,22 @@
       "community": 0
     },
     {
+      "label": "Rule.tsx",
+      "file_type": "code",
+      "source_file": "src/components/motion/Rule.tsx",
+      "source_location": "L1",
+      "id": "rule",
+      "community": 1
+    },
+    {
+      "label": "Rule()",
+      "file_type": "code",
+      "source_file": "src/components/motion/Rule.tsx",
+      "source_location": "L11",
+      "id": "rule_rule",
+      "community": 1
+    },
+    {
       "label": "PageTransition.tsx",
       "file_type": "code",
       "source_file": "src/components/motion/PageTransition.tsx",
@@ -292,12 +308,60 @@
       "community": 5
     },
     {
+      "label": "Counter.tsx",
+      "file_type": "code",
+      "source_file": "src/components/motion/Counter.tsx",
+      "source_location": "L1",
+      "id": "counter",
+      "community": 1
+    },
+    {
+      "label": "Counter()",
+      "file_type": "code",
+      "source_file": "src/components/motion/Counter.tsx",
+      "source_location": "L20",
+      "id": "counter_counter",
+      "community": 1
+    },
+    {
+      "label": "SplitChars.tsx",
+      "file_type": "code",
+      "source_file": "src/components/motion/SplitChars.tsx",
+      "source_location": "L1",
+      "id": "splitchars",
+      "community": 2
+    },
+    {
+      "label": "SplitChars()",
+      "file_type": "code",
+      "source_file": "src/components/motion/SplitChars.tsx",
+      "source_location": "L13",
+      "id": "splitchars_splitchars",
+      "community": 2
+    },
+    {
+      "label": "TimelineSpine.tsx",
+      "file_type": "code",
+      "source_file": "src/components/motion/TimelineSpine.tsx",
+      "source_location": "L1",
+      "id": "timelinespine",
+      "community": 1
+    },
+    {
+      "label": "TimelineSpine()",
+      "file_type": "code",
+      "source_file": "src/components/motion/TimelineSpine.tsx",
+      "source_location": "L15",
+      "id": "timelinespine_timelinespine",
+      "community": 1
+    },
+    {
       "label": "Reveal.tsx",
       "file_type": "code",
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L1",
       "id": "reveal",
-      "community": 2
+      "community": 1
     },
     {
       "label": "Reveal()",
@@ -305,7 +369,95 @@
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L19",
       "id": "reveal_reveal",
+      "community": 1
+    },
+    {
+      "label": "ProjectPreview.tsx",
+      "file_type": "code",
+      "source_file": "src/components/effects/ProjectPreview.tsx",
+      "source_location": "L1",
+      "id": "projectpreview",
       "community": 2
+    },
+    {
+      "label": "ProjectPreview()",
+      "file_type": "code",
+      "source_file": "src/components/effects/ProjectPreview.tsx",
+      "source_location": "L27",
+      "id": "projectpreview_projectpreview",
+      "community": 2
+    },
+    {
+      "label": "CustomCursor.tsx",
+      "file_type": "code",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L1",
+      "id": "customcursor",
+      "community": 4
+    },
+    {
+      "label": "update()",
+      "file_type": "code",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L29",
+      "id": "customcursor_update",
+      "community": 4
+    },
+    {
+      "label": "onMove()",
+      "file_type": "code",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L48",
+      "id": "customcursor_onmove",
+      "community": 4
+    },
+    {
+      "label": "onOver()",
+      "file_type": "code",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L61",
+      "id": "customcursor_onover",
+      "community": 4
+    },
+    {
+      "label": "onLeaveWindow()",
+      "file_type": "code",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L67",
+      "id": "customcursor_onleavewindow",
+      "community": 4
+    },
+    {
+      "label": "onEnterWindow()",
+      "file_type": "code",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L68",
+      "id": "customcursor_onenterwindow",
+      "community": 4
+    },
+    {
+      "label": "loop()",
+      "file_type": "code",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L70",
+      "id": "customcursor_loop",
+      "community": 4
+    },
+    {
+      "label": "HeroGlow.tsx",
+      "file_type": "code",
+      "source_file": "src/components/effects/HeroGlow.tsx",
+      "source_location": "L1",
+      "id": "heroglow",
+      "community": 3
+    },
+    {
+      "label": "HeroGlow()",
+      "file_type": "code",
+      "source_file": "src/components/effects/HeroGlow.tsx",
+      "source_location": "L11",
+      "id": "heroglow_heroglow",
+      "community": 3
     },
     {
       "label": "lenis-provider.tsx",
@@ -313,7 +465,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L1",
       "id": "lenis_provider",
-      "community": 0
+      "community": 6
     },
     {
       "label": "GsapTicker()",
@@ -321,7 +473,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L9",
       "id": "lenis_provider_gsapticker",
-      "community": 0
+      "community": 6
     },
     {
       "label": "LenisProvider()",
@@ -329,7 +481,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L34",
       "id": "lenis_provider_lenisprovider",
-      "community": 0
+      "community": 6
     },
     {
       "label": "projects.ts",
@@ -337,7 +489,7 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
       "id": "projects",
-      "community": 3
+      "community": 2
     },
     {
       "label": "getCaseStudy()",
@@ -345,7 +497,7 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L127",
       "id": "projects_getcasestudy",
-      "community": 3
+      "community": 2
     },
     {
       "label": "site.ts",
@@ -353,7 +505,7 @@
       "source_file": "src/data/site.ts",
       "source_location": "L1",
       "id": "site",
-      "community": 2
+      "community": 0
     }
   ],
   "links": [
@@ -448,6 +600,18 @@
       "source_location": "L7",
       "weight": 1.0,
       "_src": "layout",
+      "_tgt": "customcursor",
+      "source": "layout",
+      "target": "customcursor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "layout",
       "_tgt": "site",
       "source": "layout",
       "target": "site",
@@ -457,7 +621,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0,
       "_src": "layout",
       "_tgt": "layout_rootlayout",
@@ -552,8 +716,32 @@
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
+      "source_file": "src/app/work/[slug]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "page",
+      "_tgt": "rule",
+      "source": "page",
+      "target": "rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/work/[slug]/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "page",
+      "_tgt": "counter",
+      "source": "page",
+      "target": "counter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
       "source_file": "src/app/about/page.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "timeline",
@@ -565,7 +753,7 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/app/about/page.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "skillsgrid",
@@ -577,7 +765,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L11",
+      "source_location": "L13",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_pad",
@@ -589,7 +777,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L15",
+      "source_location": "L17",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_arrowupright",
@@ -601,7 +789,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L36",
+      "source_location": "L38",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_generatestaticparams",
@@ -613,7 +801,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_generatemetadata",
@@ -672,8 +860,20 @@
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "hero",
+      "_tgt": "heroglow",
+      "source": "hero",
+      "target": "heroglow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/sections/WorkList.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_src": "worklist",
       "_tgt": "projects",
@@ -685,7 +885,7 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/WorkList.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_src": "worklist",
       "_tgt": "reveal",
@@ -694,10 +894,58 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WorkList.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "worklist",
+      "_tgt": "rule",
+      "source": "worklist",
+      "target": "rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WorkList.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "worklist",
+      "_tgt": "counter",
+      "source": "worklist",
+      "target": "counter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WorkList.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "worklist",
+      "_tgt": "splitchars",
+      "source": "worklist",
+      "target": "splitchars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WorkList.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "worklist",
+      "_tgt": "projectpreview",
+      "source": "worklist",
+      "target": "projectpreview",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/WorkList.tsx",
-      "source_location": "L13",
+      "source_location": "L20",
       "weight": 1.0,
       "_src": "worklist",
       "_tgt": "worklist_arrowupright",
@@ -732,6 +980,42 @@
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Timeline.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "timeline",
+      "_tgt": "rule",
+      "source": "timeline",
+      "target": "rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Timeline.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "timeline",
+      "_tgt": "counter",
+      "source": "timeline",
+      "target": "counter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Timeline.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "timeline",
+      "_tgt": "timelinespine",
+      "source": "timeline",
+      "target": "timelinespine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L2",
       "weight": 1.0,
@@ -742,10 +1026,34 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/AboutTeaser.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "aboutteaser",
+      "_tgt": "rule",
+      "source": "aboutteaser",
+      "target": "rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L4",
+      "weight": 1.0,
+      "_src": "aboutteaser",
+      "_tgt": "counter",
+      "source": "aboutteaser",
+      "target": "counter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/AboutTeaser.tsx",
+      "source_location": "L6",
       "weight": 1.0,
       "_src": "aboutteaser",
       "_tgt": "aboutteaser_arrowright",
@@ -757,7 +1065,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/AboutTeaser.tsx",
-      "source_location": "L27",
+      "source_location": "L29",
       "weight": 1.0,
       "_src": "aboutteaser",
       "_tgt": "aboutteaser_aboutteaser",
@@ -787,6 +1095,30 @@
       "_tgt": "reveal",
       "source": "skillsgrid",
       "target": "reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/SkillsGrid.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "skillsgrid",
+      "_tgt": "rule",
+      "source": "skillsgrid",
+      "target": "rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/SkillsGrid.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "skillsgrid",
+      "_tgt": "counter",
+      "source": "skillsgrid",
+      "target": "counter",
       "confidence_score": 1.0
     },
     {
@@ -876,6 +1208,18 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/motion/Rule.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "rule",
+      "_tgt": "rule_rule",
+      "source": "rule",
+      "target": "rule_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/motion/PageTransition.tsx",
       "source_location": "L8",
       "weight": 1.0,
@@ -888,6 +1232,42 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/motion/Counter.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_src": "counter",
+      "_tgt": "counter_counter",
+      "source": "counter",
+      "target": "counter_counter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/motion/SplitChars.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "splitchars",
+      "_tgt": "splitchars_splitchars",
+      "source": "splitchars",
+      "target": "splitchars_splitchars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/motion/TimelineSpine.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "timelinespine",
+      "_tgt": "timelinespine_timelinespine",
+      "source": "timelinespine",
+      "target": "timelinespine_timelinespine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L19",
       "weight": 1.0,
@@ -895,6 +1275,102 @@
       "_tgt": "reveal_reveal",
       "source": "reveal",
       "target": "reveal_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/ProjectPreview.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_src": "projectpreview",
+      "_tgt": "projectpreview_projectpreview",
+      "source": "projectpreview",
+      "target": "projectpreview_projectpreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "customcursor",
+      "_tgt": "customcursor_update",
+      "source": "customcursor",
+      "target": "customcursor_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "customcursor",
+      "_tgt": "customcursor_onmove",
+      "source": "customcursor",
+      "target": "customcursor_onmove",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_src": "customcursor",
+      "_tgt": "customcursor_onover",
+      "source": "customcursor",
+      "target": "customcursor_onover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_src": "customcursor",
+      "_tgt": "customcursor_onleavewindow",
+      "source": "customcursor",
+      "target": "customcursor_onleavewindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_src": "customcursor",
+      "_tgt": "customcursor_onenterwindow",
+      "source": "customcursor",
+      "target": "customcursor_onenterwindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/CustomCursor.tsx",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_src": "customcursor",
+      "_tgt": "customcursor_loop",
+      "source": "customcursor",
+      "target": "customcursor_loop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/effects/HeroGlow.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "heroglow",
+      "_tgt": "heroglow_heroglow",
+      "source": "heroglow",
+      "target": "heroglow_heroglow",
       "confidence_score": 1.0
     },
     {

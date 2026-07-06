@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { caseStudies, getCaseStudy } from "@/data/projects";
 import { Reveal } from "@/components/motion/Reveal";
+import { Rule } from "@/components/motion/Rule";
+import { Counter } from "@/components/motion/Counter";
 
 interface CaseStudyPageProps {
   params: Promise<{ slug: string }>;
@@ -55,8 +57,8 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   if (!project) notFound();
 
   const index = caseStudies.findIndex((p) => p.slug === slug);
-  const prev = caseStudies[(index - 1 + caseStudies.length) % caseStudies.length];
-  const next = caseStudies[(index + 1) % caseStudies.length];
+  const prev = index > 0 ? caseStudies[index - 1] : null;
+  const next = index < caseStudies.length - 1 ? caseStudies[index + 1] : null;
 
   const sections = [
     { label: "Problem", text: project.problem },
@@ -69,13 +71,14 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       <header className="mx-auto w-full max-w-7xl px-6 md:px-10">
         <Reveal>
           <div className="flex items-center gap-4">
-            <span className="text-xs tracking-[0.25em] text-accent tabular-nums">
-              {pad(index + 1)}
-            </span>
+            <Counter
+              value={index + 1}
+              className="text-xs tracking-[0.25em] text-accent tabular-nums"
+            />
             <span className="text-xs uppercase tracking-[0.25em] text-muted">
               Case Study
             </span>
-            <span className="h-px flex-1 bg-foreground/10" aria-hidden="true" />
+            <Rule className="flex-1" />
           </div>
           <h1
             className={`mt-8 font-heading text-[clamp(2.6rem,7.5vw,7rem)] font-bold leading-[0.95] tracking-tight ${
@@ -128,13 +131,14 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
           <section key={section.label} className="pt-[clamp(3rem,8vw,7rem)]">
             <Reveal>
               <div className="flex items-center gap-4">
-                <span className="text-xs tracking-[0.25em] text-accent tabular-nums">
-                  {pad(sectionIndex + 1)}
-                </span>
+                <Counter
+                  value={sectionIndex + 1}
+                  className="text-xs tracking-[0.25em] text-accent tabular-nums"
+                />
                 <h2 className="text-xs uppercase tracking-[0.25em] text-muted">
                   {section.label}
                 </h2>
-                <span className="h-px flex-1 bg-foreground/10" aria-hidden="true" />
+                <Rule className="flex-1" />
               </div>
               <p className="mt-8 max-w-prose text-lg leading-relaxed text-foreground">
                 {section.text}
@@ -146,13 +150,14 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         <section className="pt-[clamp(3rem,8vw,7rem)]">
           <Reveal>
             <div className="flex items-center gap-4">
-              <span className="text-xs tracking-[0.25em] text-accent tabular-nums">
-                {pad(sections.length + 1)}
-              </span>
+              <Counter
+                value={sections.length + 1}
+                className="text-xs tracking-[0.25em] text-accent tabular-nums"
+              />
               <h2 className="text-xs uppercase tracking-[0.25em] text-muted">
                 Learnings
               </h2>
-              <span className="h-px flex-1 bg-foreground/10" aria-hidden="true" />
+              <Rule className="flex-1" />
             </div>
             <ul className="mt-4 max-w-prose divide-y divide-foreground/10">
               {project.learnings.map((learning, learningIndex) => (
@@ -177,36 +182,42 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-10">
           <Reveal>
             <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
-              <Link
-                href={`/work/${prev.slug}`}
-                className="group flex min-h-11 flex-col items-start gap-2"
-              >
-                <span className="text-xs uppercase tracking-[0.25em] text-muted">
-                  Previous
-                </span>
-                <span className="relative inline-block font-heading text-xl font-medium tracking-tight text-foreground md:text-2xl">
-                  {prev.title}
-                  <span
-                    className="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100"
-                    aria-hidden="true"
-                  />
-                </span>
-              </Link>
-              <Link
-                href={`/work/${next.slug}`}
-                className="group flex min-h-11 flex-col items-start gap-2 sm:items-end sm:text-right"
-              >
-                <span className="text-xs uppercase tracking-[0.25em] text-muted">
-                  Next
-                </span>
-                <span className="relative inline-block font-heading text-xl font-medium tracking-tight text-foreground md:text-2xl">
-                  {next.title}
-                  <span
-                    className="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100"
-                    aria-hidden="true"
-                  />
-                </span>
-              </Link>
+              {prev ? (
+                <Link
+                  href={`/work/${prev.slug}`}
+                  className="group flex min-h-11 flex-col items-start gap-2"
+                >
+                  <span className="text-xs uppercase tracking-[0.25em] text-muted">
+                    Previous
+                  </span>
+                  <span className="relative inline-block font-heading text-xl font-medium tracking-tight text-foreground md:text-2xl">
+                    {prev.title}
+                    <span
+                      className="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </Link>
+              ) : (
+                <span aria-hidden="true" className="hidden sm:block" />
+              )}
+              {next && (
+                <Link
+                  href={`/work/${next.slug}`}
+                  className="group flex min-h-11 flex-col items-start gap-2 sm:items-end sm:text-right"
+                >
+                  <span className="text-xs uppercase tracking-[0.25em] text-muted">
+                    Next
+                  </span>
+                  <span className="relative inline-block font-heading text-xl font-medium tracking-tight text-foreground md:text-2xl">
+                    {next.title}
+                    <span
+                      className="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </Link>
+              )}
             </div>
           </Reveal>
         </div>

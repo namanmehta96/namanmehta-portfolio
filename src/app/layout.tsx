@@ -4,6 +4,7 @@ import "./globals.css";
 import { LenisProvider } from "@/lib/lenis-provider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CustomCursor } from "@/components/effects/CustomCursor";
 import { site } from "@/data/site";
 
 const spaceGrotesk = Space_Grotesk({
@@ -56,6 +57,7 @@ export default function RootLayout({
           <Header />
           <main id="main">{children}</main>
           <Footer />
+          <CustomCursor />
         </LenisProvider>
       </body>
     </html>

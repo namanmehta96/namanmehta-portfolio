@@ -1,6 +1,7 @@
 "use client";
 
 import { m, useReducedMotion } from "framer-motion";
+import { HeroGlow } from "@/components/effects/HeroGlow";
 
 const EASE: [number, number, number, number] = [0.215, 0.61, 0.355, 1];
 // power2.inOut — documented deviation: the scroll cue is a symmetric loop
@@ -11,29 +12,62 @@ interface HeroProps {
   tagline: string;
   availability: string;
   location: string;
+  heroLine: string;
 }
 
-export function Hero({ name, tagline, availability, location }: HeroProps) {
+export function Hero({ name, tagline, availability, location, heroLine }: HeroProps) {
   const reducedMotion = useReducedMotion();
   const nameLines = name.split(" ");
 
+  // Per-character clip-up. `hidden` is identical regardless of reduced-motion
+  // (it is what the server renders); the preference only changes transitions.
+  const lineVariants = {
+    hidden: {},
+    visible: (lineIndex: number) => ({
+      transition: {
+        staggerChildren: reducedMotion ? 0 : 0.02,
+        delayChildren: reducedMotion ? 0 : 0.15 + lineIndex * 0.12,
+      },
+    }),
+  };
+  const charVariants = {
+    hidden: { y: "110%", opacity: 0 },
+    visible: {
+      y: "0%",
+      opacity: 1,
+      transition: {
+        y: { duration: reducedMotion ? 0 : 0.75, ease: EASE },
+        opacity: { duration: reducedMotion ? 0.4 : 0.3 },
+      },
+    },
+  };
+
   return (
-    <section className="relative flex min-h-svh flex-col justify-center">
-      <div className="mx-auto w-full max-w-7xl px-6 pb-32 pt-28 md:px-10">
-        <h1 className="font-heading text-[clamp(3.2rem,12vw,11rem)] font-bold leading-[0.92] tracking-tight">
-          {nameLines.map((line, index) => (
-            <span key={line} className="block overflow-hidden">
+    <section className="relative flex min-h-svh flex-col justify-center overflow-hidden">
+      <HeroGlow />
+      <div className="relative mx-auto w-full max-w-7xl px-6 pt-28 pb-32 md:px-10">
+        <h1
+          aria-label={name}
+          className="font-heading text-[clamp(3.2rem,12vw,11rem)] font-bold leading-[0.92] tracking-tight"
+        >
+          {nameLines.map((line, lineIndex) => (
+            <span key={line} aria-hidden="true" className="block overflow-hidden">
               <m.span
                 className="block"
-                initial={{ y: "100%", opacity: 0 }}
-                animate={{ y: "0%", opacity: 1 }}
-                transition={{
-                  y: { duration: reducedMotion ? 0 : 0.9, ease: EASE },
-                  opacity: { duration: reducedMotion ? 0.4 : 0.35 },
-                  delay: reducedMotion ? 0 : index * 0.12,
-                }}
+                variants={lineVariants}
+                custom={lineIndex}
+                initial="hidden"
+                animate="visible"
               >
-                {line}{" "}
+                {line.split("").map((char, charIndex) => (
+                  <m.span
+                    key={charIndex}
+                    className="inline-block"
+                    variants={charVariants}
+                  >
+                    {char}
+                  </m.span>
+                ))}
               </m.span>
             </span>
           ))}
@@ -63,6 +97,18 @@ export function Hero({ name, tagline, availability, location }: HeroProps) {
           {availability}
           {" · "}
           {location}
+        </m.p>
+        <m.p
+          className="mt-2 text-sm text-muted/80"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            y: { duration: reducedMotion ? 0 : 0.8, ease: EASE },
+            opacity: { duration: reducedMotion ? 0.4 : 0.8, ease: EASE },
+            delay: reducedMotion ? 0.1 : 0.82,
+          }}
+        >
+          {heroLine}
         </m.p>
       </div>
       <div className="absolute inset-x-0 bottom-0">

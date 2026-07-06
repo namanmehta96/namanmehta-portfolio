@@ -24,19 +24,22 @@ export function Footer() {
   return (
     <footer className="border-t border-foreground/10">
       <div className="mx-auto w-full max-w-7xl px-6 py-[clamp(4rem,10vw,8rem)] md:px-10">
-        <h2 className="font-heading text-4xl font-bold tracking-tight text-foreground md:text-6xl">
-          Let&rsquo;s talk
-        </h2>
-        <p className="mt-4 max-w-2xl text-muted">{site.availability}</p>
-        <div className="mt-10">
+        <h2 className="font-heading font-bold tracking-tight">
           <MagneticButton
             href={`mailto:${site.email}`}
-            className="inline-flex min-h-11 items-center rounded-full border border-accent/60 px-8 py-4 text-accent transition-colors duration-250 hover:bg-accent hover:text-background focus-visible:bg-accent focus-visible:text-background"
+            className="inline-block text-[clamp(2.75rem,7vw,6.5rem)] leading-none text-foreground transition-colors duration-250 hover:text-accent focus-visible:text-accent"
+          >
+            Let&rsquo;s talk
+          </MagneticButton>
+        </h2>
+        <p className="mt-6 max-w-2xl text-muted">{site.availability}</p>
+        <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
+          <a
+            href={`mailto:${site.email}`}
+            className="inline-flex min-h-11 items-center text-sm text-accent transition-colors duration-200 hover:text-foreground"
           >
             {site.email}
-          </MagneticButton>
-        </div>
-        <div className="mt-12 flex items-center gap-8">
+          </a>
           <a
             href={site.linkedin}
             target="_blank"

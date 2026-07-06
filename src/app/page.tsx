@@ -17,6 +17,7 @@ export default function Home() {
         tagline={site.tagline}
         availability={site.availability}
         location={site.location}
+        heroLine={site.heroLine}
       />
       <WorkList
         caseStudies={caseStudies.map(({ slug, title, oneLiner, tech, accent }) => ({

@@ -8,6 +8,7 @@ export interface SiteInfo {
   email: string;
   linkedin: string;
   github: string;
+  heroLine: string;
   personalLine: string;
   bio: string;
 }
@@ -33,8 +34,9 @@ export const site: SiteInfo = {
   email: "naman.mehta@edhec.com",
   linkedin: "https://www.linkedin.com/in/naman-mehta96",
   github: "https://github.com/namanmehta96",
+  heroLine: "Ex-TCS. EDHEC MBA. Seven years in data.",
   personalLine:
-    "Based in Nice. Archer at the range, Top 16 at the Call of Duty Mobile World Championship, soft spot for animals.",
+    "Based in Nice. Once an archer, once Top 16 at the Call of Duty Mobile World Championship, always a soft spot for animals.",
   bio: "Almost seven years as a Database Administrator at Tata Consultancy Services, working with clients including Morgan Stanley and the Election Commission of India, where I supported reporting infrastructure tracking operational KPIs across systems serving 900M+ registered voters. At Morgan Stanley, I built Python automation pipelines that eliminated 50% of manual reporting workflows and analysed incident patterns that drove a 30% reduction in response time. Now finishing the Global MBA at EDHEC Business School, specialising in AI and Innovation (Class of 2026). Anthropic AI Fluency certified, with hands-on experience applying LLMs and agentic workflows to real problems.",
 };
 

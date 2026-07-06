@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { site, achievements } from "@/data/site";
 import { Reveal } from "@/components/motion/Reveal";
+import { Rule } from "@/components/motion/Rule";
+import { Counter } from "@/components/motion/Counter";
 import { Timeline } from "@/components/sections/Timeline";
 import { SkillsGrid } from "@/components/sections/SkillsGrid";
 
@@ -23,13 +25,14 @@ export default function AboutPage() {
       <section className="mx-auto w-full max-w-7xl px-6 pb-[clamp(4rem,10vw,8rem)] pt-36 md:px-10 md:pt-44">
         <h1 className="sr-only">About {site.name}</h1>
         <div className="flex items-center gap-4">
-          <span className="text-xs tracking-[0.25em] text-accent tabular-nums">
-            01
-          </span>
+          <Counter
+            value={1}
+            className="text-xs tracking-[0.25em] text-accent tabular-nums"
+          />
           <span className="text-xs uppercase tracking-[0.25em] text-muted">
             About
           </span>
-          <span aria-hidden="true" className="h-px flex-1 bg-foreground/10" />
+          <Rule className="flex-1" />
         </div>
         <Reveal className="mt-12 md:mt-16" stagger={0.12}>
           <p className="max-w-3xl text-xl leading-relaxed text-foreground md:text-2xl">
@@ -49,19 +52,20 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <Timeline index="02" />
+      <Timeline index={2} />
 
-      <SkillsGrid index="03" />
+      <SkillsGrid index={3} />
 
       <section className="mx-auto w-full max-w-7xl px-6 py-[clamp(4rem,10vw,8rem)] md:px-10">
         <div className="flex items-center gap-4">
-          <span className="text-xs tracking-[0.25em] text-accent tabular-nums">
-            04
-          </span>
+          <Counter
+            value={4}
+            className="text-xs tracking-[0.25em] text-accent tabular-nums"
+          />
           <h2 className="text-xs uppercase tracking-[0.25em] text-muted">
             Achievements
           </h2>
-          <span aria-hidden="true" className="h-px flex-1 bg-foreground/10" />
+          <Rule className="flex-1" />
         </div>
         <Reveal className="mt-12 md:mt-16">
           <ol className="space-y-8">

@@ -36,7 +36,16 @@ Cinematic case-study portfolio. Dark, bold, motion-rich, in the spirit of olivie
 - Durations: hover/micro-interactions 150–300ms; scroll reveals 0.6–1.2s.
 - Animate `transform` and `opacity` only — never width/height/top/left.
 - Respect `prefers-reduced-motion` everywhere (CSS baseline in `globals.css`; use `gsap.matchMedia()` and Framer Motion's `useReducedMotion`).
-- **Rule: every animation must serve the reading experience.** If it doesn't help someone read, understand, or navigate, cut it.
+- **Rule: every animation serves the reading experience, plus a small number of deliberate signature moments that serve memorability.** Nothing bouncy, nothing neon, no gimmicks. 60fps and `prefers-reduced-motion` fallbacks are non-negotiable.
+
+### Signature moments (the deliberate set — don't add more casually)
+
+1. **Living hero background** — two soft amber radial glows breathing on 16-21s CSS loops with lerped mouse parallax (`src/components/effects/HeroGlow.tsx`).
+2. **Cursor-following project previews** — floating screenshot card lerps after the cursor over home work rows, velocity tilt, desktop only; touch gets static thumbnails (`src/components/effects/ProjectPreview.tsx`, images in `public/previews/`, regenerate via `node scripts/capture-previews.mjs`).
+3. **Custom cursor** — dot + lagging ring; ring becomes an amber "View" badge over work rows, shrinks on links. Fine pointers only, never under reduced motion (`src/components/effects/CustomCursor.tsx`).
+4. **Character-level hero reveal** — per-char clip-up (~20ms stagger); home row titles get a quiet per-char lift on hover (`SplitChars`).
+5. **Drawn lines and counters** — label-row hairlines draw in (`Rule`), section indexes count up (`Counter`), the About timeline's amber spine draws with scroll (`TimelineSpine`).
+6. **Footer moment** — large magnetic "Let's talk" mailto line so the site ends on a beat.
 
 ## Performance budget
 

@@ -1,23 +1,26 @@
 import { skills } from "@/data/site";
 import { Reveal } from "@/components/motion/Reveal";
+import { Rule } from "@/components/motion/Rule";
+import { Counter } from "@/components/motion/Counter";
 
 interface SkillsGridProps {
-  index?: string;
+  index?: number;
 }
 
 export function SkillsGrid({ index }: SkillsGridProps) {
   return (
     <section className="mx-auto w-full max-w-7xl px-6 py-[clamp(4rem,10vw,8rem)] md:px-10">
       <div className="flex items-center gap-4">
-        {index && (
-          <span className="text-xs tracking-[0.25em] text-accent tabular-nums">
-            {index}
-          </span>
+        {index !== undefined && (
+          <Counter
+            value={index}
+            className="text-xs tracking-[0.25em] text-accent tabular-nums"
+          />
         )}
         <h2 className="text-xs uppercase tracking-[0.25em] text-muted">
           Skills
         </h2>
-        <span aria-hidden="true" className="h-px flex-1 bg-foreground/10" />
+        <Rule className="flex-1" />
       </div>
       <div className="mt-12 grid grid-cols-1 gap-y-12 md:mt-16 md:grid-cols-2 md:gap-x-16 md:gap-y-14">
         {skills.map((group) => (
