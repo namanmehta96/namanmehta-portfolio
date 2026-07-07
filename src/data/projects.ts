@@ -46,7 +46,7 @@ export const projects: Project[] = [
     approach:
       "I built a working sales intelligence tool, not a mockup. An account manager selects a company and the platform generates a full engagement brief: an executive summary of the customer's ESG position, meeting intelligence, key contacts, and a solution catalog that bridges the customer's sustainability challenges to specific Orange Business offerings, with CRM export at the end. Built and deployed in three months.",
     outcome:
-      "Won Best Pitch out of 15 teams at the EDHEC Sustainable Impact Challenge 2026, presented to Orange Business.",
+      "Won Best Pitch out of 15 teams at the EDHEC Sustainable Impact Challenge 2025/26, presented to Orange Business.",
     learnings: [
       "The value of GenAI in sales is not the text it writes, it is the hours of research it collapses into minutes.",
       "Tools get adopted when they end in an action, which is why the CRM export mattered as much as the AI profile.",
