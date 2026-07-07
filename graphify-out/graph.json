@@ -9,7 +9,7 @@
       "source_file": "next-env.d.ts",
       "source_location": "L1",
       "id": "next_env_d",
-      "community": 9
+      "community": 7
     },
     {
       "label": "next.config.ts",
@@ -17,7 +17,7 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "id": "next_config",
-      "community": 10
+      "community": 8
     },
     {
       "label": "robots.ts",
@@ -25,7 +25,7 @@
       "source_file": "src/app/robots.ts",
       "source_location": "L1",
       "id": "robots",
-      "community": 8
+      "community": 6
     },
     {
       "label": "robots()",
@@ -33,7 +33,7 @@
       "source_file": "src/app/robots.ts",
       "source_location": "L6",
       "id": "robots_robots",
-      "community": 8
+      "community": 6
     },
     {
       "label": "opengraph-image.tsx",
@@ -41,7 +41,7 @@
       "source_file": "src/app/opengraph-image.tsx",
       "source_location": "L1",
       "id": "opengraph_image",
-      "community": 0
+      "community": 2
     },
     {
       "label": "sitemap.ts",
@@ -65,15 +65,15 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L1",
       "id": "layout",
-      "community": 0
+      "community": 2
     },
     {
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L48",
+      "source_location": "L47",
       "id": "layout_rootlayout",
-      "community": 0
+      "community": 2
     },
     {
       "label": "page.tsx",
@@ -81,7 +81,7 @@
       "source_file": "src/app/work/[slug]/page.tsx",
       "source_location": "L1",
       "id": "page",
-      "community": 3
+      "community": 4
     },
     {
       "label": "Home()",
@@ -89,7 +89,7 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L10",
       "id": "page_home",
-      "community": 3
+      "community": 4
     },
     {
       "label": "template.tsx",
@@ -97,7 +97,7 @@
       "source_file": "src/app/template.tsx",
       "source_location": "L1",
       "id": "template",
-      "community": 6
+      "community": 5
     },
     {
       "label": "Template()",
@@ -105,39 +105,39 @@
       "source_file": "src/app/template.tsx",
       "source_location": "L3",
       "id": "template_template",
-      "community": 6
+      "community": 5
     },
     {
       "label": "pad()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "page_pad",
-      "community": 3
+      "community": 4
     },
     {
       "label": "ArrowUpRight()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "page_arrowupright",
-      "community": 3
+      "community": 4
     },
     {
       "label": "generateStaticParams()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L38",
+      "source_location": "L39",
       "id": "page_generatestaticparams",
-      "community": 3
+      "community": 4
     },
     {
       "label": "generateMetadata()",
       "file_type": "code",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L42",
+      "source_location": "L43",
       "id": "page_generatemetadata",
-      "community": 3
+      "community": 4
     },
     {
       "label": "MagneticButton.tsx",
@@ -145,7 +145,7 @@
       "source_file": "src/components/ui/MagneticButton.tsx",
       "source_location": "L1",
       "id": "magneticbutton",
-      "community": 2
+      "community": 3
     },
     {
       "label": "MagneticButton()",
@@ -153,7 +153,7 @@
       "source_file": "src/components/ui/MagneticButton.tsx",
       "source_location": "L17",
       "id": "magneticbutton_magneticbutton",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Hero.tsx",
@@ -161,7 +161,7 @@
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L1",
       "id": "hero",
-      "community": 2
+      "community": 3
     },
     {
       "label": "WorkList.tsx",
@@ -183,7 +183,7 @@
       "label": "dimmed()",
       "file_type": "code",
       "source_file": "src/components/sections/WorkList.tsx",
-      "source_location": "L48",
+      "source_location": "L51",
       "id": "worklist_dimmed",
       "community": 1
     },
@@ -193,7 +193,7 @@
       "source_file": "src/components/sections/Timeline.tsx",
       "source_location": "L1",
       "id": "timeline",
-      "community": 4
+      "community": 0
     },
     {
       "label": "AboutTeaser.tsx",
@@ -201,7 +201,7 @@
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L1",
       "id": "aboutteaser",
-      "community": 5
+      "community": 0
     },
     {
       "label": "ArrowRight()",
@@ -209,7 +209,7 @@
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L6",
       "id": "aboutteaser_arrowright",
-      "community": 5
+      "community": 0
     },
     {
       "label": "AboutTeaser()",
@@ -217,7 +217,7 @@
       "source_file": "src/components/sections/AboutTeaser.tsx",
       "source_location": "L29",
       "id": "aboutteaser_aboutteaser",
-      "community": 5
+      "community": 0
     },
     {
       "label": "SkillsGrid.tsx",
@@ -225,7 +225,7 @@
       "source_file": "src/components/sections/SkillsGrid.tsx",
       "source_location": "L1",
       "id": "skillsgrid",
-      "community": 7
+      "community": 0
     },
     {
       "label": "NavLinks.tsx",
@@ -233,7 +233,7 @@
       "source_file": "src/components/layout/NavLinks.tsx",
       "source_location": "L1",
       "id": "navlinks",
-      "community": 0
+      "community": 2
     },
     {
       "label": "NavLinks()",
@@ -241,7 +241,7 @@
       "source_file": "src/components/layout/NavLinks.tsx",
       "source_location": "L11",
       "id": "navlinks_navlinks",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Footer.tsx",
@@ -249,7 +249,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L1",
       "id": "footer",
-      "community": 2
+      "community": 3
     },
     {
       "label": "ArrowUpRight()",
@@ -257,7 +257,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L5",
       "id": "footer_arrowupright",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Footer()",
@@ -265,7 +265,7 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L24",
       "id": "footer_footer",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Header.tsx",
@@ -273,7 +273,7 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L1",
       "id": "header",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Header()",
@@ -281,7 +281,7 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L5",
       "id": "header_header",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Rule.tsx",
@@ -289,7 +289,7 @@
       "source_file": "src/components/motion/Rule.tsx",
       "source_location": "L1",
       "id": "rule",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Rule()",
@@ -297,7 +297,7 @@
       "source_file": "src/components/motion/Rule.tsx",
       "source_location": "L11",
       "id": "rule_rule",
-      "community": 4
+      "community": 0
     },
     {
       "label": "PageTransition.tsx",
@@ -305,7 +305,7 @@
       "source_file": "src/components/motion/PageTransition.tsx",
       "source_location": "L1",
       "id": "pagetransition",
-      "community": 6
+      "community": 5
     },
     {
       "label": "PageTransition()",
@@ -313,7 +313,7 @@
       "source_file": "src/components/motion/PageTransition.tsx",
       "source_location": "L8",
       "id": "pagetransition_pagetransition",
-      "community": 6
+      "community": 5
     },
     {
       "label": "Counter.tsx",
@@ -321,7 +321,7 @@
       "source_file": "src/components/motion/Counter.tsx",
       "source_location": "L1",
       "id": "counter",
-      "community": 7
+      "community": 0
     },
     {
       "label": "Counter()",
@@ -329,7 +329,7 @@
       "source_file": "src/components/motion/Counter.tsx",
       "source_location": "L27",
       "id": "counter_counter",
-      "community": 7
+      "community": 0
     },
     {
       "label": "SplitChars.tsx",
@@ -353,7 +353,7 @@
       "source_file": "src/components/motion/TimelineSpine.tsx",
       "source_location": "L1",
       "id": "timelinespine",
-      "community": 4
+      "community": 0
     },
     {
       "label": "TimelineSpine()",
@@ -361,7 +361,7 @@
       "source_file": "src/components/motion/TimelineSpine.tsx",
       "source_location": "L15",
       "id": "timelinespine_timelinespine",
-      "community": 4
+      "community": 0
     },
     {
       "label": "Reveal.tsx",
@@ -369,7 +369,7 @@
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L1",
       "id": "reveal",
-      "community": 5
+      "community": 0
     },
     {
       "label": "Reveal()",
@@ -377,7 +377,23 @@
       "source_file": "src/components/motion/Reveal.tsx",
       "source_location": "L19",
       "id": "reveal_reveal",
-      "community": 5
+      "community": 0
+    },
+    {
+      "label": "ProgressSpine.tsx",
+      "file_type": "code",
+      "source_file": "src/components/motion/ProgressSpine.tsx",
+      "source_location": "L1",
+      "id": "progressspine",
+      "community": 4
+    },
+    {
+      "label": "ProgressSpine()",
+      "file_type": "code",
+      "source_file": "src/components/motion/ProgressSpine.tsx",
+      "source_location": "L24",
+      "id": "progressspine_progressspine",
+      "community": 4
     },
     {
       "label": "ProjectPreview.tsx",
@@ -396,28 +412,12 @@
       "community": 1
     },
     {
-      "label": "ScrollProgress.tsx",
-      "file_type": "code",
-      "source_file": "src/components/effects/ScrollProgress.tsx",
-      "source_location": "L1",
-      "id": "scrollprogress",
-      "community": 0
-    },
-    {
-      "label": "ScrollProgress()",
-      "file_type": "code",
-      "source_file": "src/components/effects/ScrollProgress.tsx",
-      "source_location": "L13",
-      "id": "scrollprogress_scrollprogress",
-      "community": 0
-    },
-    {
       "label": "Aurora.tsx",
       "file_type": "code",
       "source_file": "src/components/effects/Aurora.tsx",
       "source_location": "L1",
       "id": "aurora",
-      "community": 2
+      "community": 3
     },
     {
       "label": "tokenRgb()",
@@ -425,7 +425,7 @@
       "source_file": "src/components/effects/Aurora.tsx",
       "source_location": "L13",
       "id": "aurora_tokenrgb",
-      "community": 2
+      "community": 3
     },
     {
       "label": "mix()",
@@ -433,7 +433,7 @@
       "source_file": "src/components/effects/Aurora.tsx",
       "source_location": "L25",
       "id": "aurora_mix",
-      "community": 2
+      "community": 3
     },
     {
       "label": "Aurora()",
@@ -441,7 +441,7 @@
       "source_file": "src/components/effects/Aurora.tsx",
       "source_location": "L44",
       "id": "aurora_aurora",
-      "community": 2
+      "community": 3
     },
     {
       "label": "lenis-provider.tsx",
@@ -449,7 +449,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L1",
       "id": "lenis_provider",
-      "community": 0
+      "community": 2
     },
     {
       "label": "GsapTicker()",
@@ -457,7 +457,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L9",
       "id": "lenis_provider_gsapticker",
-      "community": 0
+      "community": 2
     },
     {
       "label": "LenisProvider()",
@@ -465,7 +465,7 @@
       "source_file": "src/lib/lenis-provider.tsx",
       "source_location": "L34",
       "id": "lenis_provider_lenisprovider",
-      "community": 0
+      "community": 2
     },
     {
       "label": "projects.ts",
@@ -489,7 +489,7 @@
       "source_file": "src/data/site.ts",
       "source_location": "L1",
       "id": "site",
-      "community": 0
+      "community": 2
     }
   ],
   "links": [
@@ -584,18 +584,6 @@
       "source_location": "L7",
       "weight": 1.0,
       "_src": "layout",
-      "_tgt": "scrollprogress",
-      "source": "layout",
-      "target": "scrollprogress",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/layout.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_src": "layout",
       "_tgt": "site",
       "source": "layout",
       "target": "site",
@@ -605,7 +593,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L48",
+      "source_location": "L47",
       "weight": 1.0,
       "_src": "layout",
       "_tgt": "layout_rootlayout",
@@ -746,10 +734,22 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/work/[slug]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "page",
+      "_tgt": "progressspine",
+      "source": "page",
+      "target": "progressspine",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_pad",
@@ -761,7 +761,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_arrowupright",
@@ -773,7 +773,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_generatestaticparams",
@@ -785,7 +785,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app/work/[slug]/page.tsx",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0,
       "_src": "page",
       "_tgt": "page_generatemetadata",
@@ -941,7 +941,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/WorkList.tsx",
-      "source_location": "L48",
+      "source_location": "L51",
       "weight": 1.0,
       "_src": "worklist",
       "_tgt": "worklist_dimmed",
@@ -1288,6 +1288,18 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/motion/ProgressSpine.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "progressspine",
+      "_tgt": "progressspine_progressspine",
+      "source": "progressspine",
+      "target": "progressspine_progressspine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/effects/ProjectPreview.tsx",
       "source_location": "L34",
       "weight": 1.0,
@@ -1295,18 +1307,6 @@
       "_tgt": "projectpreview_projectpreview",
       "source": "projectpreview",
       "target": "projectpreview_projectpreview",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/effects/ScrollProgress.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_src": "scrollprogress",
-      "_tgt": "scrollprogress_scrollprogress",
-      "source": "scrollprogress",
-      "target": "scrollprogress_scrollprogress",
       "confidence_score": 1.0
     },
     {

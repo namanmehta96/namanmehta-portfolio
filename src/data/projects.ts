@@ -31,28 +31,6 @@ export type Project = CaseStudy | ProjectNote;
 export const projects: Project[] = [
   {
     type: "case-study",
-    slug: "astrazeneca-early-action",
-    title: "AstraZeneca Early Action",
-    oneLiner:
-      "AI-powered lung cancer early detection strategy, built for AstraZeneca during the EDHEC MBA Industry Acceleration Project.",
-    tech: ["React", "Three.js", "AI strategy", "Healthcare"],
-    repo: "https://github.com/namanmehta96/astrazeneca-early-action",
-    live: "https://namanmehta96.github.io/astrazeneca-early-action",
-    accent: true,
-    problem:
-      "Lung cancer is the world's number one cancer killer, and 84% of cases are caught too late, when five-year survival falls below 20%. The tools to detect it early already exist. What is missing is the system that connects screening, diagnosis, and treatment into one journey. Fewer than 10% of eligible adults ever get screened. The EDHEC Industry Acceleration Project asked how AI could move a company like AstraZeneca from optimizing processes to transforming them. We picked the hardest version of that question.",
-    approach:
-      "We built the strategy as an interactive product rather than a slide deck: seven chapters covering the problem, AstraZeneca's position, a Blue Ocean analysis showing that every AI layer in oncology is crowded except patient journey coordination, and a proposed architecture of four AI layers where a human always signs off on clinical decisions. The plan: prove the model in a UK pilot with the NHS, then scale through AZ's global footprint. Instead of fixed forecasts, every number sits on a visible assumption stack. We also included a chapter called Five Honest Gaps, naming our strategy's weaknesses before the jury could. I co-built the entire site with one teammate, from the React and Three.js front end to the content architecture.",
-    outcome:
-      "Presented at the final defense in April 2026 to faculty and industry reviewers, with the interactive site as the centrepiece of the pitch.",
-    learnings: [
-      "Naming your own gaps first turns the hardest Q&A questions into prepared ground.",
-      "Presenting numbers as adjustable assumptions builds more trust than confident forecasts.",
-      "Shipping strategy as an interactive product changes how seriously people engage with it.",
-    ],
-  },
-  {
-    type: "case-study",
     slug: "orange-esg-platform",
     title: "Orange ESG Platform",
     oneLiner:
@@ -60,6 +38,7 @@ export const projects: Project[] = [
     tech: ["React", "Generative AI", "B2B sales", "ESG"],
     repo: "https://github.com/namanmehta96/orange-esg-platform",
     live: "https://namanmehta96.github.io/orange-esg-platform",
+    accent: true,
     recognition:
       "Best Pitch, EDHEC Sustainable Impact Challenge 2026 (15 teams)",
     problem:
@@ -71,6 +50,27 @@ export const projects: Project[] = [
     learnings: [
       "The value of GenAI in sales is not the text it writes, it is the hours of research it collapses into minutes.",
       "Tools get adopted when they end in an action, which is why the CRM export mattered as much as the AI profile.",
+    ],
+  },
+  {
+    type: "case-study",
+    slug: "astrazeneca-early-action",
+    title: "AstraZeneca Early Action",
+    oneLiner:
+      "AI-powered lung cancer early detection strategy, built for AstraZeneca during the EDHEC MBA Industry Acceleration Project.",
+    tech: ["React", "Three.js", "AI strategy", "Healthcare"],
+    repo: "https://github.com/namanmehta96/astrazeneca-early-action",
+    live: "https://namanmehta96.github.io/astrazeneca-early-action",
+    problem:
+      "Lung cancer is the world's number one cancer killer, and 84% of cases are caught too late, when five-year survival falls below 20%. The tools to detect it early already exist. What is missing is the system that connects screening, diagnosis, and treatment into one journey. Fewer than 10% of eligible adults ever get screened. The EDHEC Industry Acceleration Project asked how AI could move a company like AstraZeneca from optimizing processes to transforming them. We picked the hardest version of that question.",
+    approach:
+      "We built the strategy as an interactive product rather than a slide deck: seven chapters covering the problem, AstraZeneca's position, a Blue Ocean analysis showing that every AI layer in oncology is crowded except patient journey coordination, and a proposed architecture of four AI layers where a human always signs off on clinical decisions. The plan: prove the model in a UK pilot with the NHS, then scale through AZ's global footprint. Instead of fixed forecasts, every number sits on a visible assumption stack. We also included a chapter called Five Honest Gaps, naming our strategy's weaknesses before the jury could. I co-built the entire site with one teammate, from the React and Three.js front end to the content architecture.",
+    outcome:
+      "Presented at the final defense in April 2026 to faculty and industry reviewers, with the interactive site as the centrepiece of the pitch.",
+    learnings: [
+      "Naming your own gaps first turns the hardest Q&A questions into prepared ground.",
+      "Presenting numbers as adjustable assumptions builds more trust than confident forecasts.",
+      "Shipping strategy as an interactive product changes how seriously people engage with it.",
     ],
   },
   {

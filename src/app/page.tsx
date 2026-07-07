@@ -20,13 +20,16 @@ export default function Home() {
         heroLine={site.heroLine}
       />
       <WorkList
-        caseStudies={caseStudies.map(({ slug, title, oneLiner, tech, accent }) => ({
-          slug,
-          title,
-          oneLiner,
-          tech,
-          accent,
-        }))}
+        caseStudies={caseStudies.map(
+          ({ slug, title, oneLiner, tech, accent, recognition }) => ({
+            slug,
+            title,
+            oneLiner,
+            tech,
+            accent,
+            recognition,
+          }),
+        )}
         note={note ? { title: note.title, body: note.body } : null}
       />
       <AboutTeaser excerpt={bioExcerpt} />

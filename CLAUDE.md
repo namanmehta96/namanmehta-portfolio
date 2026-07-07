@@ -51,7 +51,7 @@ Cinematic case-study portfolio. Dark, bold, motion-rich, in the spirit of olivie
 3. **Character-level hero reveal** — per-char clip-up (~20ms stagger); home row titles get a quiet per-char lift on hover (`SplitChars`).
 4. **Drawn lines and counters** — label-row hairlines draw in (`Rule`), section indexes count up (`Counter`), the About timeline's amber spine draws with scroll (`TimelineSpine`).
 5. **Footer moment** — large magnetic "Let's talk" mailto line so the site ends on a beat.
-6. **Scroll progress** — 2px amber line fixed at the very top fills with scroll site-wide (`src/components/effects/ScrollProgress.tsx`); on case studies the section numbers tick from muted to amber as each section is passed. Functional reading aids — both stay active under reduced motion (ticks become instant).
+6. **Case-study progress spine** — a vertical hairline in the left margin of case-study content whose amber fill draws downward scrubbed to reading progress (`src/components/motion/ProgressSpine.tsx`); the section numbers (01 Problem → 04 Learnings) tick muted → amber exactly as the fill reaches them, reversing on scroll-back. Spine is desktop-only; mobile keeps the ticks. Functional reading aid — under reduced motion the fill stays empty (never falsely "read") and ticks are instant. No horizontal top progress bar (tried and removed).
 
 No custom cursor — native cursor everywhere (a custom one was tried and deliberately removed in the refinement pass).
 

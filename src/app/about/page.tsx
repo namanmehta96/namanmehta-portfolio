@@ -9,7 +9,7 @@ import { SkillsGrid } from "@/components/sections/SkillsGrid";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Seven years in data infrastructure for Morgan Stanley and the Election Commission of India, now finishing an MBA in AI & Innovation at EDHEC.",
+    "Seven years as a database administrator at TCS for clients including Morgan Stanley and the Election Commission of India, now finishing an MBA in AI & Innovation at EDHEC.",
 };
 
 // Split the bio verbatim at sentence boundaries: a lede plus 1-2 supporting paragraphs.

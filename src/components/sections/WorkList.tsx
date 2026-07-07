@@ -37,7 +37,10 @@ function ArrowUpRight() {
 }
 
 interface WorkListProps {
-  caseStudies: Pick<CaseStudy, "slug" | "title" | "oneLiner" | "tech" | "accent">[];
+  caseStudies: Pick<
+    CaseStudy,
+    "slug" | "title" | "oneLiner" | "tech" | "accent" | "recognition"
+  >[];
   note: { title: string; body: string } | null;
 }
 
@@ -118,8 +121,15 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
                       <ArrowUpRight />
                     </span>
                     <div className="col-span-2 md:col-span-1 md:col-start-2 md:row-start-1">
+                      {/* data-row-title wraps eyebrow + title so the preview
+                          card's flip-above constraint clears the award too */}
+                      <div data-row-title>
+                        {project.recognition && (
+                          <p className="mb-4 text-xs leading-relaxed text-accent">
+                            {project.recognition}
+                          </p>
+                        )}
                       <h3
-                        data-row-title
                         className="font-heading text-[clamp(2.2rem,6vw,4.8rem)] font-bold leading-none tracking-tight"
                       >
                         <span className="sr-only">{project.title}</span>
@@ -140,6 +150,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
                           />
                         </span>
                       </h3>
+                      </div>
                       <p
                         data-row-copy
                         className="mt-6 max-w-[55ch] text-muted leading-[1.8] md:mt-8"

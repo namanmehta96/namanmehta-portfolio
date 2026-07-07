@@ -32,8 +32,10 @@ export function Counter({ value, className, tick = false }: CounterProps) {
       const el = ref.current;
       if (!el) return;
       if (tick) {
+        // trigger on the number itself so ticks align with a ProgressSpine
+        // whose fill tip tracks the same 55%-viewport line
         ScrollTrigger.create({
-          trigger: el.closest("section") ?? el,
+          trigger: el,
           start: "top 55%",
           onEnter: () => {
             el.style.color = "var(--accent)";

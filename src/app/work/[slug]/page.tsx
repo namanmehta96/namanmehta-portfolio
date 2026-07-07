@@ -5,6 +5,7 @@ import { caseStudies, getCaseStudy } from "@/data/projects";
 import { Reveal } from "@/components/motion/Reveal";
 import { Rule } from "@/components/motion/Rule";
 import { Counter } from "@/components/motion/Counter";
+import { ProgressSpine } from "@/components/motion/ProgressSpine";
 
 interface CaseStudyPageProps {
   params: Promise<{ slug: string }>;
@@ -126,7 +127,8 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         </Reveal>
       </header>
 
-      <div className="mx-auto w-full max-w-7xl px-6 pb-[clamp(3rem,8vw,7rem)] md:px-10">
+      <div className="relative mx-auto w-full max-w-7xl px-6 pb-[clamp(3rem,8vw,7rem)] md:px-10">
+        <ProgressSpine className="left-4 hidden md:block" />
         {sections.map((section, sectionIndex) => (
           <section key={section.label} className="pt-[clamp(3rem,8vw,7rem)]">
             <Reveal>
