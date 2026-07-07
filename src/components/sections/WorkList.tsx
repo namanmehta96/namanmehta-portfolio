@@ -9,6 +9,8 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Rule } from "@/components/motion/Rule";
 import { Counter } from "@/components/motion/Counter";
 import { SplitChars } from "@/components/motion/SplitChars";
+import { ProgressSpine } from "@/components/motion/ProgressSpine";
+import { SpineNode } from "@/components/motion/SpineNode";
 import { ProjectPreview, type HoveredRow } from "@/components/effects/ProjectPreview";
 
 const MotionLink = m.create(Link);
@@ -76,10 +78,17 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
             </div>
           </Reveal>
         </div>
-        <div className="mt-[clamp(2.5rem,4vw,3.5rem)]">
+        <div className="relative mt-[clamp(2.5rem,4vw,3.5rem)]">
+          {/* -left-6: this wrapper sits inside the container padding, so the
+              line lands at container-x + 16px, same as the case-study spine */}
+          <ProgressSpine className="-left-6 hidden md:block" />
           {caseStudies.map((project, index) => (
             <Reveal key={project.slug}>
-              <div className={dimmed(hovered?.slug === project.slug)}>
+              <div className={`relative ${dimmed(hovered?.slug === project.slug)}`}>
+                {/* outside the scaled MotionLink so it never slides off the
+                    line on hover; center = row padding-top + index pt-3 (12px)
+                    + half the text-sm line box (10px) */}
+                <SpineNode className="top-[calc(clamp(2.5rem,5vw,4.25rem)+22px)] -left-[27.5px] hidden -translate-y-1/2 md:block" />
                 <MotionLink
                   href={`/work/${project.slug}`}
                   onPointerEnter={(event) => {
@@ -125,7 +134,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
                           card's flip-above constraint clears the award too */}
                       <div data-row-title>
                         {project.recognition && (
-                          <p className="mb-4 text-xs leading-relaxed text-accent">
+                          <p className="mb-5 text-sm leading-relaxed text-accent md:text-base">
                             {project.recognition}
                           </p>
                         )}

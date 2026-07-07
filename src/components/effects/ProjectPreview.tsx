@@ -5,8 +5,8 @@ import Image from "next/image";
 import { m, useMotionValue } from "framer-motion";
 
 const EASE: [number, number, number, number] = [0.215, 0.61, 0.355, 1];
-const CARD_W = 400;
-const CARD_H = 260;
+const CARD_W = 340;
+const CARD_H = 221;
 const MARGIN = 24;
 
 interface PreviewItem {
@@ -155,7 +155,7 @@ export function ProjectPreview({ items, active }: ProjectPreviewProps) {
           alt=""
           width={720}
           height={480}
-          sizes="400px"
+          sizes="340px"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
             active?.slug === item.slug ? "opacity-100" : "opacity-0"
           }`}

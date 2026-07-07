@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 import { caseStudies } from "@/data/projects";
 
-// TODO: set real domain
-const baseUrl = "https://namanmehta-portfolio.vercel.app";
+const baseUrl = "https://namanmehta.dev";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

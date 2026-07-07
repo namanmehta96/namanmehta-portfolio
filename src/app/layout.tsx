@@ -24,8 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  // TODO: set real domain
-  metadataBase: new URL("https://namanmehta-portfolio.vercel.app"),
+  metadataBase: new URL("https://namanmehta.dev"),
   alternates: {
     canonical: "./",
   },

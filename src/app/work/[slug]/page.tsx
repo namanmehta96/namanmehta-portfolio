@@ -6,6 +6,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Rule } from "@/components/motion/Rule";
 import { Counter } from "@/components/motion/Counter";
 import { ProgressSpine } from "@/components/motion/ProgressSpine";
+import { SpineNode } from "@/components/motion/SpineNode";
 
 interface CaseStudyPageProps {
   params: Promise<{ slug: string }>;
@@ -100,7 +101,9 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             ))}
           </ul>
           {project.recognition && (
-            <p className="mt-6 text-sm text-accent">{project.recognition}</p>
+            <p className="mt-6 text-sm text-accent md:text-base">
+              {project.recognition}
+            </p>
           )}
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -132,7 +135,10 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         {sections.map((section, sectionIndex) => (
           <section key={section.label} className="pt-[clamp(3rem,8vw,7rem)]">
             <Reveal>
-              <div className="flex items-center gap-4">
+              <div className="relative flex items-center gap-4">
+                {/* node center = spine line at container left-4 (16.5px);
+                    content starts at md:px-10 (40px) -> 12.5px - 40px */}
+                <SpineNode className="top-1/2 -left-[27.5px] hidden -translate-y-1/2 md:block" />
                 <Counter
                   value={sectionIndex + 1}
                   tick
@@ -152,7 +158,8 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
         <section className="pt-[clamp(3rem,8vw,7rem)]">
           <Reveal>
-            <div className="flex items-center gap-4">
+            <div className="relative flex items-center gap-4">
+              <SpineNode className="top-1/2 -left-[27.5px] hidden -translate-y-1/2 md:block" />
               <Counter
                 value={sections.length + 1}
                 tick
