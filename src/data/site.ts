@@ -96,7 +96,7 @@ export const skills: SkillGroup[] = [
 ];
 
 export const achievements: string[] = [
-  "Best Pitch, EDHEC Sustainable Impact Challenge 2026, out of 15 teams (Orange Business)",
+  "Best Pitch, EDHEC Sustainable Impact Challenge 2025/26, out of 15 teams (Orange Business)",
   "3rd of 8 international teams, EDHEC Global MBA Hackathon, Paris 2026 (partnered with IBM)",
   "Top 16, Call of Duty Mobile World Championship 2021",
 ];

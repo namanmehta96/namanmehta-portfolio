@@ -40,7 +40,7 @@ export const projects: Project[] = [
     live: "https://namanmehta96.github.io/orange-esg-platform",
     accent: true,
     recognition:
-      "Best Pitch, EDHEC Sustainable Impact Challenge 2026 (15 teams)",
+      "Best Pitch, EDHEC Sustainable Impact Challenge 2025/26",
     problem:
       "Orange Business sales teams engage enterprise customers on sustainability, but understanding each customer's ESG posture meant manually digging through annual reports, sustainability disclosures, and press releases. Slow, inconsistent, and impossible to scale, which capped how targeted those conversations could be. The EDHEC Sustainable Impact Challenge brief from Orange asked: can Generative AI automate customer sustainability profiling from public information?",
     approach:
