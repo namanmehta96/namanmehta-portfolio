@@ -1,5 +1,5 @@
 import { site } from "@/data/site";
-import { caseStudies, projects, type ProjectNote } from "@/data/projects";
+import { caseStudies, engagementNote } from "@/data/projects";
 import { Hero } from "@/components/sections/Hero";
 import { WorkList } from "@/components/sections/WorkList";
 import { AboutTeaser } from "@/components/sections/AboutTeaser";
@@ -8,8 +8,6 @@ import { AboutTeaser } from "@/components/sections/AboutTeaser";
 const bioExcerpt = `${site.bio.split(". ").slice(0, 2).join(". ")}.`;
 
 export default function Home() {
-  const note = projects.find((p): p is ProjectNote => p.type === "note");
-
   return (
     <>
       <Hero
@@ -30,7 +28,11 @@ export default function Home() {
             recognition,
           }),
         )}
-        note={note ? { title: note.title, body: note.body } : null}
+        note={{
+          slug: engagementNote.slug,
+          title: engagementNote.title,
+          body: engagementNote.body,
+        }}
       />
       <AboutTeaser excerpt={bioExcerpt} />
     </>

@@ -43,7 +43,26 @@ interface WorkListProps {
     CaseStudy,
     "slug" | "title" | "oneLiner" | "tech" | "accent" | "recognition"
   >[];
-  note: { title: string; body: string } | null;
+  note: { slug: string; title: string; body: string } | null;
+}
+
+function ArrowRight() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M5 12h14" />
+      <path d="M13 6l6 6-6 6" />
+    </svg>
+  );
 }
 
 export function WorkList({ caseStudies, note }: WorkListProps) {
@@ -180,7 +199,7 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
                       <div className="mt-6 hidden [@media(pointer:coarse)]:block">
                         <Image
                           src={`/previews/${project.slug}.jpg`}
-                          alt={`${project.title} — live site preview`}
+                          alt={`${project.title} · live site preview`}
                           width={720}
                           height={480}
                           sizes="176px"
@@ -198,7 +217,12 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
         {note && (
           <Reveal>
             <div className={dimmed(false)}>
-              <div className="grid grid-cols-1 gap-y-3 border-b border-foreground/10 py-[clamp(2.5rem,5vw,4rem)] md:grid-cols-[6rem_1fr] md:gap-x-14 md:gap-y-0">
+              {/* quieter than the project rows: no spine node, no preview
+                  card, no hover scale — just the affordance sweep */}
+              <Link
+                href={`/work/${note.slug}`}
+                className="group grid grid-cols-1 gap-y-3 border-b border-foreground/10 py-[clamp(2.5rem,5vw,4rem)] md:grid-cols-[6rem_1fr] md:gap-x-14 md:gap-y-0"
+              >
                 <span className="text-xs uppercase tracking-[0.25em] text-muted md:pt-1">
                   NDA
                 </span>
@@ -209,8 +233,23 @@ export function WorkList({ caseStudies, note }: WorkListProps) {
                   <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
                     {note.body}
                   </p>
+                  <span className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm text-accent">
+                    <span className="relative">
+                      About this engagement
+                      <span
+                        className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100"
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span
+                      className="transition-transform duration-250 group-hover:translate-x-1 group-focus-visible:translate-x-1"
+                      aria-hidden="true"
+                    >
+                      <ArrowRight />
+                    </span>
+                  </span>
                 </div>
-              </div>
+              </Link>
             </div>
           </Reveal>
         )}

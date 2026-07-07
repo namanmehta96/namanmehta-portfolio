@@ -18,12 +18,23 @@ export interface CaseStudy {
   learnings: string[];
 }
 
+/**
+ * NDA engagement note. Gets a quieter internal page at /work/[slug], but
+ * deliberately has NO live/repo/tech/recognition fields — it is structurally
+ * impossible for a note to link out to deliverables.
+ */
 export interface ProjectNote {
   type: "note";
+  slug: string;
   title: string;
+  /** Subtitle line on the engagement page. */
+  subtitle: string;
+  /** Short summary shown in the home work list. */
   body: string;
-  /** Renders without any outbound link (e.g. NDA work). */
-  noLink: true;
+  engagement: string;
+  howWeWorked: string;
+  whatIDid: string;
+  whyNothingToClick: string;
 }
 
 export type Project = CaseStudy | ProjectNote;
@@ -114,15 +125,28 @@ export const projects: Project[] = [
   },
   {
     type: "note",
+    slug: "amadeus",
     title: "Amadeus: AI & Travel Distribution Strategy",
+    subtitle: "EDHEC Global MBA Consulting Engagement · May–July 2026",
     body: "Strategic consulting study for Amadeus on the implications of AI for travel distribution, delivered through the EDHEC Global MBA (May–July 2026). Team of five under faculty supervision. Full deliverables and findings are proprietary to Amadeus under NDA.",
-    noLink: true,
+    engagement:
+      "A five-person MBA consulting team, working under faculty supervision, engaged by Amadeus, the global travel technology company, on a strategic study on the implications of AI for travel distribution.",
+    howWeWorked:
+      "Over eight weeks, we combined industry and market analysis, cross-sector benchmarking, and stakeholder interviews across Amadeus functions, structured around milestone reviews with the sponsor team. The engagement concluded with a written strategic study and an executive presentation to Amadeus.",
+    whatIDid:
+      "Market research and competitive analysis, contributions to the strategic recommendations, and design and build of an internal analysis dashboard supporting the team's work.",
+    whyNothingToClick:
+      "All deliverables, findings, and materials from this engagement are the property of Amadeus under a signed NDA and IP assignment. What I can share is the shape of the work; the substance belongs to the client. Happy to discuss the experience and methodology in conversation.",
   },
 ];
 
 export const caseStudies = projects.filter(
   (p): p is CaseStudy => p.type === "case-study",
 );
+
+const foundNote = projects.find((p): p is ProjectNote => p.type === "note");
+if (!foundNote) throw new Error("Amadeus engagement note missing from projects data");
+export const engagementNote: ProjectNote = foundNote;
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {
   return caseStudies.find((p) => p.slug === slug);

@@ -40,6 +40,9 @@ await shoot("astrazeneca-early-action", async (page) => {
   await page.mouse.click(720, 480);
   await new Promise((r) => setTimeout(r, 2500));
   await clickByText(page, "skip");
+  // the hero's particle logo animates continuously — give it time to form a
+  // closed ring; if the frame looks smeared, re-run and eyeball the result
+  await new Promise((r) => setTimeout(r, 5000));
 });
 
 await shoot("orange-esg-platform", async (page) => {

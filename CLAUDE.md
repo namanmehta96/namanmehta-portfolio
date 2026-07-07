@@ -83,6 +83,7 @@ public/           Static assets
 ## Working rules
 
 - All copy comes from `src/data/` — never inline content in components. `TODO: Naman to write` placeholders are Naman's to fill; don't invent case-study copy.
-- The Amadeus entry is a `note`, not a case study: renders as a short quiet entry, **no page, no link** (NDA).
+- **No em dashes in user-facing copy.** Title separators use `:` (e.g. "Amadeus: AI & Travel Distribution Strategy"), meta/list separators use `·`; en dashes are fine in date ranges ("May–July 2026").
+- The Amadeus entry is a `note`, not a case study: a quieter home block and a quieter engagement page at `/work/amadeus` (no live/repo buttons, tags, recognition, spine, or preview card — the `ProjectNote` type structurally lacks those fields, NDA). It closes the prev/next chain after the last case study and has no "next".
 - Mobile-first; test at 375px before scaling up. 4.5:1 contrast minimum, 44px touch targets, visible focus rings, keyboard nav.
 - One clear primary action per screen. No emoji as icons — inline SVG only.

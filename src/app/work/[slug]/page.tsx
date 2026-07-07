@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { caseStudies, getCaseStudy } from "@/data/projects";
+import { caseStudies, engagementNote, getCaseStudy } from "@/data/projects";
 import { Reveal } from "@/components/motion/Reveal";
 import { Rule } from "@/components/motion/Rule";
 import { Counter } from "@/components/motion/Counter";
@@ -60,7 +60,11 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
   const index = caseStudies.findIndex((p) => p.slug === slug);
   const prev = index > 0 ? caseStudies[index - 1] : null;
-  const next = index < caseStudies.length - 1 ? caseStudies[index + 1] : null;
+  // the Amadeus engagement note closes the chain after the last case study
+  const next =
+    index < caseStudies.length - 1
+      ? caseStudies[index + 1]
+      : { slug: engagementNote.slug, title: engagementNote.title };
 
   const sections = [
     { label: "Problem", text: project.problem },
@@ -187,7 +191,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       </div>
 
       <nav
-        aria-label="More case studies"
+        aria-label="More work"
         className="border-t border-foreground/10"
       >
         <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-10">
