@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <!-- Palette hex is allowed in this standalone asset (a favicon can't read CSS vars) -->
-  <rect width="64" height="64" rx="14" fill="#0d1117" />
-  <!-- Geometric N drawn as a path — favicon-safe at 16px, unlike font text -->
+  <!-- Palette hex is allowed in this standalone asset (a favicon can't read CSS vars).
+       Amber tile so the mark is unmistakable at tab size — a dark tile with a light
+       N reads exactly like Safari's letter fallback. -->
+  <rect width="64" height="64" rx="14" fill="#d4a574" />
   <path
     d="M14 48 V16 h6.5 L33.5 38.5 V16 H40 v32 h-6.5 L20.5 25.5 V48 Z"
-    fill="#e8e6d8"
+    fill="#0d1117"
   />
-  <!-- Amber spine node -->
-  <circle cx="47.5" cy="43.5" r="4.5" fill="#d4a574" />
+  <circle cx="47.5" cy="43.5" r="4.5" fill="#0d1117" />
 </svg>
