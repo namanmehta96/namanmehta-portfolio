@@ -35,15 +35,35 @@ const clickByText = (page, matcher) =>
     return !!el;
   }, matcher);
 
-await shoot("astrazeneca-early-action", async (page) => {
-  // splash -> skip the intro video -> hero
-  await page.mouse.click(720, 480);
+// AZ needs a HEADED browser: in headless mode the hero's particle animation
+// cycles forever, but with a real focused window it settles into the
+// AstraZeneca speedmark after ~75s. Always eyeball the frame after capture.
+{
+  const headed = await puppeteer.launch({
+    executablePath: CHROME,
+    headless: false,
+    args: ["--window-size=1480,1060", "--window-position=40,40"],
+    defaultViewport: { width: 1440, height: 960 },
+  });
+  const page = await headed.newPage();
+  await page.bringToFront();
+  await page.goto("https://namanmehta96.github.io/astrazeneca-early-action/", {
+    waitUntil: "networkidle2",
+    timeout: 60000,
+  });
+  await new Promise((r) => setTimeout(r, 3000));
+  await page.mouse.click(720, 480); // splash
   await new Promise((r) => setTimeout(r, 2500));
   await clickByText(page, "skip");
-  // the hero's particle logo animates continuously — give it time to form a
-  // closed ring; if the frame looks smeared, re-run and eyeball the result
-  await new Promise((r) => setTimeout(r, 5000));
-});
+  await new Promise((r) => setTimeout(r, 75000)); // settle into the speedmark
+  await page.screenshot({
+    path: `${OUT}astrazeneca-early-action.jpg`,
+    type: "jpeg",
+    quality: 82,
+  });
+  console.log("captured astrazeneca-early-action (headed)");
+  await headed.close();
+}
 
 await shoot("orange-esg-platform", async (page) => {
   await clickByText(page, "skip tutorial");
