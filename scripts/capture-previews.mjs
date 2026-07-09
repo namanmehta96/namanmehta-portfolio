@@ -35,9 +35,10 @@ const clickByText = (page, matcher) =>
     return !!el;
   }, matcher);
 
-// AZ needs a HEADED browser: in headless mode the hero's particle animation
-// cycles forever, but with a real focused window it settles into the
-// AstraZeneca speedmark after ~75s. Always eyeball the frame after capture.
+// AZ needs a HEADED browser (headless renders a different particle cycle).
+// The hero animation never fully rests — it cycles through formations — so
+// this captures at ~120s (the committed frame's phase) but the result is
+// phase-dependent: ALWAYS eyeball the frame and re-run until it looks right.
 {
   const headed = await puppeteer.launch({
     executablePath: CHROME,
@@ -55,7 +56,7 @@ const clickByText = (page, matcher) =>
   await page.mouse.click(720, 480); // splash
   await new Promise((r) => setTimeout(r, 2500));
   await clickByText(page, "skip");
-  await new Promise((r) => setTimeout(r, 75000)); // settle into the speedmark
+  await new Promise((r) => setTimeout(r, 120000)); // phase of the committed frame
   await page.screenshot({
     path: `${OUT}astrazeneca-early-action.jpg`,
     type: "jpeg",
