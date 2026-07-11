@@ -31,6 +31,8 @@ export interface ProjectNote {
   subtitle: string;
   /** Short summary shown in the home work list. */
   body: string;
+  /** Process-only descriptors (no client subject matter). */
+  tags: string[];
   engagement: string;
   howWeWorked: string;
   whatIDid: string;
@@ -124,19 +126,27 @@ export const projects: Project[] = [
     ],
   },
   {
+    // NDA-compliant copy (verified against the signed agreement, 11 Jul 2026):
+    // process only — no project subject matter, no dashboard contents.
     type: "note",
     slug: "amadeus",
-    title: "Amadeus: AI & Travel Distribution Strategy",
+    title: "Amadeus: Strategic Consulting Engagement",
     subtitle: "EDHEC Global MBA Consulting Engagement · May–July 2026",
-    body: "Strategic consulting study for Amadeus on the implications of AI for travel distribution, delivered through the EDHEC Global MBA (May–July 2026). Team of five under faculty supervision. Full deliverables and findings are proprietary to Amadeus under NDA.",
+    body: "A strategic research project delivered for Amadeus, the global travel-technology platform, through the EDHEC Global MBA (May–July 2026). Five-person consulting team under faculty supervision.",
+    tags: [
+      "Consulting",
+      "Industry analysis",
+      "Stakeholder interviews",
+      "Executive presentation",
+    ],
     engagement:
-      "A five-person MBA consulting team, working under faculty supervision, engaged by Amadeus, the global travel technology company, on a strategic study on the implications of AI for travel distribution.",
+      "A strategic research project delivered for Amadeus, the global travel-technology platform, through the EDHEC Global MBA (May–July 2026). Five-person consulting team under faculty supervision.",
     howWeWorked:
-      "Over eight weeks, we combined industry and market analysis, cross-sector benchmarking, and stakeholder interviews across Amadeus functions, structured around milestone reviews with the sponsor team. The engagement concluded with a written strategic study and an executive presentation to Amadeus.",
+      "The scope covered industry analysis, benchmarking, and stakeholder interviews: a team of five, faculty-supervised, working over eight weeks. The outputs were a written strategic study and an executive presentation to senior client stakeholders.",
     whatIDid:
-      "Market research and competitive analysis, contributions to the strategic recommendations, and design and build of an internal analysis dashboard supporting the team's work.",
+      "Primary research, competitive analysis, interview participation, contributions to the recommendations, and building an internal dashboard to support the team's analysis.",
     whyNothingToClick:
-      "All deliverables, findings, and materials from this engagement are the property of Amadeus under a signed NDA and IP assignment. What I can share is the shape of the work; the substance belongs to the client. Happy to discuss the experience and methodology in conversation.",
+      "Deliverables and findings are proprietary to Amadeus under NDA.",
   },
 ];
 

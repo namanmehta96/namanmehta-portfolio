@@ -83,7 +83,8 @@ public/           Static assets
 ## Working rules
 
 - All copy comes from `src/data/` — never inline content in components. `TODO: Naman to write` placeholders are Naman's to fill; don't invent case-study copy.
-- **No em dashes in user-facing copy.** Title separators use `:` (e.g. "Amadeus: AI & Travel Distribution Strategy"), meta/list separators use `·`; en dashes are fine in date ranges ("May–July 2026").
-- The Amadeus entry is a `note`, not a case study: a quieter home block and a quieter engagement page at `/work/amadeus` (no live/repo buttons, tags, recognition, spine, or preview card — the `ProjectNote` type structurally lacks those fields, NDA). It closes the prev/next chain after the last case study and has no "next".
+- **No em dashes in user-facing copy.** Title separators use `:` (e.g. "Amadeus: Strategic Consulting Engagement"), meta/list separators use `·`; en dashes are fine in date ranges ("May–July 2026").
+- **Amadeus NDA (in force until 3 Jul 2031):** the Amadeus page carries process-only copy. Never name or paraphrase the project subject; never describe, screenshot, link, or deploy the internal dashboard; never use the word "AI" anywhere on that page (its back-nav links to the work index instead of naming the AI-titled neighbour). Project objectives, competitive landscape, scenarios, and recommendation content are off-limits (saying Naman contributed to the recommendations is allowed). The approved copy lives in `src/data/projects.ts`; don't reword or extend it without Naman's sign-off.
+- The Amadeus entry is a `note`, not a case study: a quieter home block and a quieter engagement page at `/work/amadeus` (no live/repo buttons, recognition, spine, or preview card — the `ProjectNote` type structurally lacks those fields; its `tags` are process-only descriptors). It closes the prev/next chain after the last case study and has no "next"; its own back-nav goes to the work index.
 - Mobile-first; test at 375px before scaling up. 4.5:1 contrast minimum, 44px touch targets, visible focus rings, keyboard nav.
 - One clear primary action per screen. No emoji as icons — inline SVG only.

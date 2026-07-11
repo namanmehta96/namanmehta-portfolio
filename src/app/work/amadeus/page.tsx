@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { caseStudies, engagementNote } from "@/data/projects";
+import { engagementNote } from "@/data/projects";
 import { Reveal } from "@/components/motion/Reveal";
 import { Rule } from "@/components/motion/Rule";
 
@@ -20,10 +20,12 @@ const sections = [
  * Quieter engagement template: no live/repo buttons, no tech tags, no
  * recognition, no progress spine or section counters — the substance is
  * under NDA, so the page stays deliberately restrained.
+ *
+ * NDA note: the bottom nav deliberately links back to the work index rather
+ * than naming the previous case study ("AI Ethics") — the word "AI" must not
+ * appear anywhere on this page.
  */
 export default function AmadeusPage() {
-  const prev = caseStudies[caseStudies.length - 1];
-
   return (
     <article className="pt-36 md:pt-44">
       <header className="mx-auto w-full max-w-7xl px-6 md:px-10">
@@ -40,6 +42,14 @@ export default function AmadeusPage() {
           <p className="mt-6 text-sm text-muted md:text-base">
             {engagementNote.subtitle}
           </p>
+          <ul className="mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.25em] text-muted">
+            {engagementNote.tags.map((tag, tagIndex) => (
+              <li key={tag} className="flex items-center gap-x-3">
+                {tagIndex > 0 && <span aria-hidden="true">&middot;</span>}
+                {tag}
+              </li>
+            ))}
+          </ul>
         </Reveal>
       </header>
 
@@ -65,14 +75,14 @@ export default function AmadeusPage() {
         <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-10">
           <Reveal>
             <Link
-              href={`/work/${prev.slug}`}
+              href="/#work"
               className="group flex min-h-11 flex-col items-start gap-2"
             >
               <span className="text-xs uppercase tracking-[0.25em] text-muted">
-                Previous
+                Back to
               </span>
               <span className="relative inline-block font-heading text-xl font-medium tracking-tight text-foreground md:text-2xl">
-                {prev.title}
+                All work
                 <span
                   className="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-accent transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100"
                   aria-hidden="true"
